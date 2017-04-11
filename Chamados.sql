@@ -15,3 +15,9 @@ CREATE TABLE chamado (
 	CONSTRAINT fk_id_solicitante FOREIGN KEY (solicitante) REFERENCES Usuario (id),
 	CONSTRAINT fk_id_responsavel FOREIGN KEY (responsavel) REFERENCES Usuario (id),
 )
+
+CREATE TABLE STATUS(
+id int,
+descricao varchar(200),
+primary key(id)
+)
