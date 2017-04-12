@@ -1,3 +1,7 @@
+CREATE DATABASE ticket
+
+USE ticket
+
 CREATE TABLE chamado (
 	id  not null AUTOINCREMENT,
 	responsavel integer,
@@ -27,3 +31,6 @@ id int,
 descricao varchar(200),
 primary key(id)	
 )
+
+
+
