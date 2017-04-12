@@ -21,3 +21,10 @@ id int,
 descricao varchar(200),
 primary key(id)
 )
+
+CREATE TABLE tipo(
+id int,
+descricao varchar(200),
+primary key(id)	
+)
+	
