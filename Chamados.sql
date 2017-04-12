@@ -27,4 +27,3 @@ id int,
 descricao varchar(200),
 primary key(id)	
 )
-	
