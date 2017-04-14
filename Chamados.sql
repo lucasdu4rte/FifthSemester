@@ -16,8 +16,8 @@ CREATE TABLE chamado (
 	PRIMARY KEY (id),
 	CONSTRAINT fk_id_status FOREIGN KEY (id_status) REFERENCES Status (id),
 	CONSTRAINT fk_id_tipo FOREIGN KEY (id_tipo) REFERENCES Tipo (id),
-	CONSTRAINT fk_id_solicitante FOREIGN KEY (solicitante) REFERENCES Usuario (id),
-	CONSTRAINT fk_id_responsavel FOREIGN KEY (responsavel) REFERENCES Usuario (id),
+	CONSTRAINT fk_id_solicitante FOREIGN KEY (solicitante) REFERENCES funcionario (id),
+	CONSTRAINT fk_id_responsavel FOREIGN KEY (responsavel) REFERENCES funcionario (id),
 )
 
 CREATE TABLE STATUS(
@@ -31,6 +31,20 @@ id int,
 descricao varchar(200),
 primary key(id)	
 )
+
+CREATE TABLE funcionario{
+id int identity,
+nome varchar(100),
+data_nasc varchar(50),
+salario float,
+email varchar(50),
+telefone varchar(50),
+celular varchar(50),
+ramal varchar(50),
+departamento varchar(100),
+primary key(id),
+CONSTRAINT fk_id_departamento FOREIGN KEY (departamento) REFERENCES departamento (id)
+}
 
 
 
