@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/04/14 15:38:17.167,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/14 15:38:29.675,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/14 15:39:52.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/04/14 15:39:52.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/14 15:40:00.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/14 15:40:00.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2017/04/14 15:43:06.350,E:\Projeto Sistema 5S\FifthSemester\SisTicket\SisTicket.dproj=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
