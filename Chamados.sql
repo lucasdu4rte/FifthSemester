@@ -3,7 +3,7 @@ CREATE DATABASE ticket
 USE ticket
 
 CREATE TABLE chamado (
-	id  not null AUTOINCREMENT,
+	id not null AUTOINCREMENT,
 	responsavel integer,
 	solicitante not null integer,
 	data_inc date,
@@ -20,7 +20,7 @@ CREATE TABLE chamado (
 	CONSTRAINT fk_id_responsavel FOREIGN KEY (responsavel) REFERENCES Usuario (id),
 )
 
-CREATE TABLE STATUS(
+CREATE TABLE status(
 id int,
 descricao varchar(200),
 primary key(id)
@@ -32,5 +32,9 @@ descricao varchar(200),
 primary key(id)	
 )
 
-
+CREATE TABLE departamento (
+	id not null AUTOINCREMENT,
+	Descricao not null,
+	PRIMARY KEY(id)
+)
 
