@@ -4,14 +4,13 @@ object DM: TDM
   Width = 545
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'SERVER=DANIELPELISSARI\SQLEXPRESS'
+      'SERVER=LCS-NOTEBOOK\SQLEXPRESS2014'
       'OSAuthent=Yes'
       'ApplicationName=Architect'
-      'Workstation=DANIELPELISSARI\SQLEXPRESS'
+      'Workstation=LCS-NOTEBOOK\SQLEXPRESS2014'
       'DATABASE=ticket'
       'MARS=yes'
       'DriverID=MSSQL')
-    Connected = True
     LoginPrompt = False
     Left = 32
     Top = 8
