@@ -3,15 +3,18 @@
 	<Transactions>
     <Transaction>2017/04/14 15:38:17.000.167,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/04/14 15:38:29.000.675,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2017/04/14 15:39:52.000.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/04/14 15:39:52.000.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2017/04/14 15:40:00.000.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2017/04/14 15:40:00.000.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>2017/04/14 15:43:06.000.350,E:\Projeto Sistema 5S\FifthSemester\SisTicket\SisTicket.dproj=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.pas=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas</Transaction>
-    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.dfm=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm</Transaction>
-    <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.pas=E:\Projeto Sistema 5S\FifthSemester\UntDM.pas</Transaction>
-    <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.dfm=E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm</Transaction>
-    <Transaction>2017/04/15 14:00:06.311,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPadrao1.pas</Transaction>
+    <Transaction>2017/04/14 15:39:52.000.927,C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm</Transaction>
+    <Transaction>2017/04/14 15:39:52.000.927,C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas</Transaction>
+    <Transaction>2017/04/14 15:40:00.000.450,C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas=E:\Projeto Sistema 5S\FifthSemester\UntDM.pas</Transaction>
+    <Transaction>2017/04/14 15:40:00.000.450,C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.dfm=E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm</Transaction>
+    <Transaction>2017/04/14 15:43:06.000.350,C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Projeto Sistema 5S\FifthSemester\SisTicket\SisTicket.dproj</Transaction>
+    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.pas</Transaction>
+    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.dfm</Transaction>
+    <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.dfm</Transaction>
+    <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\UntDM.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.pas</Transaction>
+    <Transaction>2017/04/15 14:00:06.000.311,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPadrao1.pas</Transaction>
+    <Transaction>2017/04/15 15:45:08.543,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas</Transaction>
+    <Transaction>2017/04/15 15:45:55.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.dfm</Transaction>
+    <Transaction>2017/04/15 15:45:55.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas</Transaction>
   </Transactions>
 </BorlandProject>

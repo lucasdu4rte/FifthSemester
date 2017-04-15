@@ -4,7 +4,8 @@ uses
   Vcl.Forms,
   UntPrincipal in 'UntPrincipal.pas' {FrmMenuPrincipal},
   UntDM in 'UntDM.pas' {DM: TDataModule},
-  UntPadrao1 in 'UntPadrao1.pas' {FrmPadrao1};
+  UntPadrao1 in 'UntPadrao1.pas' {FrmPadrao1},
+  UntFuncionarios in 'UntFuncionarios.pas' {FrmFuncionarios};
 
 {$R *.res}
 
@@ -14,5 +15,6 @@ begin
   Application.CreateForm(TFrmMenuPrincipal, FrmMenuPrincipal);
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TFrmPadrao1, FrmPadrao1);
+  Application.CreateForm(TFrmFuncionarios, FrmFuncionarios);
   Application.Run;
 end.

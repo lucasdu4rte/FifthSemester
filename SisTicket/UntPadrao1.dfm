@@ -4,7 +4,7 @@ object FrmPadrao1: TFrmPadrao1
   BorderIcons = []
   BorderStyle = bsDialog
   Caption = 'FormBasica'
-  ClientHeight = 291
+  ClientHeight = 390
   ClientWidth = 734
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -33,7 +33,6 @@ object FrmPadrao1: TFrmPadrao1
     ShowCaptions = True
     ShowHint = True
     TabOrder = 0
-    ExplicitWidth = 968
     object btn_Pesquisa: TToolButton
       Left = 0
       Top = 0
@@ -177,7 +176,7 @@ object FrmPadrao1: TFrmPadrao1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 272
+    Top = 371
     Width = 734
     Height = 19
     Panels = <
@@ -193,9 +192,7 @@ object FrmPadrao1: TFrmPadrao1
       item
         Width = 50
       end>
-    ExplicitLeft = 232
-    ExplicitTop = 168
-    ExplicitWidth = 0
+    ExplicitTop = 272
   end
   object PanelEntrada: TPanel
     Left = 0
@@ -206,8 +203,6 @@ object FrmPadrao1: TFrmPadrao1
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 2
-    ExplicitLeft = 8
-    ExplicitTop = 55
     object LblStatus: TLabel
       Left = 654
       Top = 6
@@ -311,13 +306,10 @@ object FrmPadrao1: TFrmPadrao1
     Left = 0
     Top = 79
     Width = 734
-    Height = 193
+    Height = 292
     Align = alClient
     TabOrder = 3
-    ExplicitLeft = 352
-    ExplicitTop = 216
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitHeight = 193
   end
   object ImageList1: TImageList
     Height = 24
@@ -325,7 +317,7 @@ object FrmPadrao1: TFrmPadrao1
     Left = 24
     Top = 296
     Bitmap = {
-      494C01010D001800140018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1526,7 +1518,7 @@ object FrmPadrao1: TFrmPadrao1
     Left = 64
     Top = 296
     Bitmap = {
-      494C01010D001800140018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2727,7 +2719,7 @@ object FrmPadrao1: TFrmPadrao1
     Left = 120
     Top = 297
     Bitmap = {
-      494C01010D001800140018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B

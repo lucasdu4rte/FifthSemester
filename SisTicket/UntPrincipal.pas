@@ -39,6 +39,8 @@ implementation
 
 {$R *.dfm}
 
+uses UntPadrao1, UntFuncionarios;
+
 procedure TFrmMenuPrincipal.Action1Execute(Sender: TObject);
 begin
   Close;
@@ -51,6 +53,7 @@ end;
 
 procedure TFrmMenuPrincipal.cad_FuncionarioExecute(Sender: TObject);
 begin
+  FrmFuncionarios.ShowModal;
   ShowMessage('Funcionarios!');
 end;
 

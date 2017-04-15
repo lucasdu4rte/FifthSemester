@@ -57,6 +57,7 @@ type
     procedure btn_salvarClick(Sender: TObject);
     procedure btn_CancelarClick(Sender: TObject);
     procedure btn_sairClick(Sender: TObject);
+    procedure FrmMenuPrincipalcad_ChamadoExecute(Sender: TObject);
 
   private
     FExecutar: TExecutar;
@@ -258,6 +259,11 @@ begin
   FDTabela.Last;
   Executar:= navegacao;
   Executar:= exibePanels;
+end;
+
+procedure TFrmPadrao1.FrmMenuPrincipalcad_ChamadoExecute(Sender: TObject);
+begin
+    ShowMessage('cadastro');
 end;
 
 procedure TFrmPadrao1.SetExecutar(const Value: TExecutar);

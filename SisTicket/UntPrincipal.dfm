@@ -37,7 +37,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
     Font.Name = 'Segoe UI'
     Font.Style = []
     Spacing = 0
-    ExplicitHeight = 29
   end
   object ActionToolBar1: TActionToolBar
     Left = 0
@@ -60,8 +59,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
     Font.Style = []
     ParentFont = False
     Spacing = 0
-    ExplicitTop = 23
-    ExplicitHeight = 416
   end
   object StatusBar1: TStatusBar
     Left = 0
@@ -81,9 +78,6 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
       item
         Width = 50
       end>
-    ExplicitLeft = 376
-    ExplicitTop = 296
-    ExplicitWidth = 0
   end
   object ImageList1: TImageList
     Height = 64
@@ -91,7 +85,7 @@ object FrmMenuPrincipal: TFrmMenuPrincipal
     Left = 216
     Top = 192
     Bitmap = {
-      494C010103001800380040004000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101030018003C0040004000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000000100004000000001002000000000000000
       0100000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
