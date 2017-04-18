@@ -52,4 +52,11 @@ CREATE TABLE departamento (
 	PRIMARY KEY(id)
 )
 
-
+CREATE TABLE funcionarioxchamado (
+	id not null AUTOINCREMENT,
+	id_funcionario int,
+	id_chamado int,
+	PRIMARY KEY(id),
+	CONSTRAINT fk_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionario (id),
+	CONSTRAINT fk_id_chamado FOREIGN KEY (id_chamado) REFERENCES chamado (id)
+)
