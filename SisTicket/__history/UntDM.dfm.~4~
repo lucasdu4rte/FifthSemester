@@ -4,9 +4,13 @@ object DM: TDM
   Width = 545
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'User_Name=root'
-      'Database=ticket'
-      'DriverID=MySQL')
+      'SERVER=DANIELPELISSARI\SQLEXPRESS'
+      'OSAuthent=Yes'
+      'ApplicationName=Architect'
+      'Workstation=DANIELPELISSARI\SQLEXPRESS'
+      'DATABASE=ticket'
+      'MARS=yes'
+      'DriverID=MSSQL')
     LoginPrompt = False
     Left = 32
     Top = 8
