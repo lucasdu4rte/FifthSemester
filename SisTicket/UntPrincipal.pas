@@ -54,7 +54,6 @@ end;
 procedure TFrmMenuPrincipal.cad_FuncionarioExecute(Sender: TObject);
 begin
   FrmFuncionarios.ShowModal;
-  ShowMessage('Funcionarios!');
 end;
 
 procedure TFrmMenuPrincipal.FormActivate(Sender: TObject);

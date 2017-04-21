@@ -77,9 +77,9 @@ inherited FrmFuncionarios: TFrmFuncionarios
     object Label5: TLabel
       Left = 275
       Top = 16
-      Width = 72
+      Width = 31
       Height = 13
-      Caption = 'Data Altera'#231#227'o'
+      Caption = 'Label5'
     end
     object DBEdit1: TDBEdit
       Left = 191
@@ -148,7 +148,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
       TabOrder = 6
     end
     object DBEdit7: TDBEdit
-      Left = 353
+      Left = 321
       Top = 13
       Width = 121
       Height = 21
@@ -3831,10 +3831,9 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Top = 424
   end
   object FDQryDepto: TFDQuery
-    Active = True
     Connection = DM.FDConnection1
     SQL.Strings = (
-      'SELECT * FROM ticket.dbo.departamento ORDER BY descricao')
+      'SELECT * FROM dbo.departamento ORDER BY descricao')
     Left = 328
     Top = 423
   end

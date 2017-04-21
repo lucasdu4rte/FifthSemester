@@ -1,178 +1,16 @@
 inherited FrmFuncionarios: TFrmFuncionarios
   Caption = 'FrmFuncionarios'
-  ClientHeight = 506
-  ExplicitWidth = 740
-  ExplicitHeight = 535
   PixelsPerInch = 96
   TextHeight = 13
   inherited StatusBar1: TStatusBar
-    Top = 487
     ExplicitTop = 371
   end
-  inherited PanelEntrada: TPanel
-    inherited CheckHabilita: TDBCheckBox
-      DataField = 'status'
-    end
-  end
   inherited PnlFicha: TPanel
-    Height = 408
-    ExplicitTop = 80
-    ExplicitHeight = 352
-    object Label2: TLabel
-      Left = 137
-      Top = 64
-      Width = 27
-      Height = 13
-      Caption = 'Nome'
-    end
-    object Label3: TLabel
-      Left = 68
-      Top = 104
-      Width = 96
-      Height = 13
-      Caption = 'Data de Nascimento'
-    end
-    object Email: TLabel
-      Left = 140
-      Top = 144
-      Width = 24
-      Height = 13
-      Caption = 'Email'
-    end
-    object Telefone: TLabel
-      Left = 122
-      Top = 184
-      Width = 42
-      Height = 13
-      Caption = 'Telefone'
-    end
-    object Label6: TLabel
-      Left = 131
-      Top = 224
-      Width = 33
-      Height = 13
-      Caption = 'Celular'
-    end
-    object Label7: TLabel
-      Left = 392
-      Top = 184
-      Width = 29
-      Height = 13
-      Caption = 'Ramal'
-    end
-    object Label8: TLabel
-      Left = 95
-      Top = 268
-      Width = 69
-      Height = 13
-      Caption = 'Departamento'
-    end
-    object Label4: TLabel
-      Left = 24
-      Top = 16
-      Width = 66
-      Height = 13
-      Caption = 'Data Inclus'#227'o'
-    end
-    object Label5: TLabel
-      Left = 275
-      Top = 16
-      Width = 72
-      Height = 13
-      Caption = 'Data Altera'#231#227'o'
-    end
-    object DBEdit1: TDBEdit
-      Left = 191
-      Top = 61
-      Width = 386
-      Height = 21
-      DataField = 'nome'
-      DataSource = DataSource1
-      TabOrder = 0
-    end
-    object DBEdit2: TDBEdit
-      Left = 192
-      Top = 101
-      Width = 121
-      Height = 21
-      DataField = 'data_nasc'
-      DataSource = DataSource1
-      TabOrder = 1
-    end
-    object DBEdit3: TDBEdit
-      Left = 192
-      Top = 141
-      Width = 385
-      Height = 21
-      DataField = 'email'
-      DataSource = DataSource1
-      TabOrder = 2
-    end
-    object DBEdit4: TDBEdit
-      Left = 192
-      Top = 181
-      Width = 177
-      Height = 21
-      DataField = 'telefone'
-      DataSource = DataSource1
-      TabOrder = 3
-    end
-    object DBEdit5: TDBEdit
-      Left = 448
-      Top = 181
-      Width = 129
-      Height = 21
-      DataField = 'ramal'
-      DataSource = DataSource1
-      TabOrder = 4
-    end
-    object DBEdit6: TDBEdit
-      Left = 191
-      Top = 221
-      Width = 177
-      Height = 21
-      DataField = 'celular'
-      DataSource = DataSource1
-      TabOrder = 5
-    end
-    object DBLookupComboBox1: TDBLookupComboBox
-      Left = 191
-      Top = 264
-      Width = 178
-      Height = 21
-      DataField = 'id_departamento'
-      DataSource = DataSource1
-      KeyField = 'id'
-      ListField = 'descricao'
-      ListSource = DSDepto
-      TabOrder = 6
-    end
-    object DBEdit7: TDBEdit
-      Left = 353
-      Top = 13
-      Width = 121
-      Height = 21
-      DataField = 'data_alt'
-      DataSource = DataSource1
-      ReadOnly = True
-      TabOrder = 7
-    end
-    object DBEdit8: TDBEdit
-      Left = 96
-      Top = 13
-      Width = 121
-      Height = 21
-      DataField = 'data_inc'
-      DataSource = DataSource1
-      ReadOnly = True
-      TabOrder = 8
-    end
+    ExplicitHeight = 292
   end
   inherited ImageList1: TImageList
-    Left = 32
-    Top = 424
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1368,10 +1206,8 @@ inherited FrmFuncionarios: TFrmFuncionarios
       000000000000}
   end
   inherited ImageList2: TImageList
-    Left = 72
-    Top = 424
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2567,10 +2403,8 @@ inherited FrmFuncionarios: TFrmFuncionarios
       000000000000}
   end
   inherited ImageList3: TImageList
-    Left = 128
-    Top = 425
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B
@@ -3766,81 +3600,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
       000000000000}
   end
   inherited FDTabela: TFDTable
-    IndexFieldNames = 'id'
     UpdateOptions.UpdateTableName = 'ticket.dbo.funcionario'
     TableName = 'ticket.dbo.funcionario'
-    Left = 192
-    Top = 424
-    object FDTabelaid: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object FDTabelanome: TStringField
-      FieldName = 'nome'
-      Origin = 'nome'
-      Size = 100
-    end
-    object FDTabeladata_nasc: TStringField
-      FieldName = 'data_nasc'
-      Origin = 'data_nasc'
-      Size = 50
-    end
-    object FDTabelaemail: TStringField
-      FieldName = 'email'
-      Origin = 'email'
-      Size = 50
-    end
-    object FDTabelatelefone: TStringField
-      FieldName = 'telefone'
-      Origin = 'telefone'
-      Size = 50
-    end
-    object FDTabelacelular: TStringField
-      FieldName = 'celular'
-      Origin = 'celular'
-      Size = 50
-    end
-    object FDTabelaramal: TStringField
-      FieldName = 'ramal'
-      Origin = 'ramal'
-      Size = 50
-    end
-    object FDTabelaid_departamento: TIntegerField
-      FieldName = 'id_departamento'
-      Origin = 'id_departamento'
-    end
-    object FDTabelastatus: TStringField
-      FieldName = 'status'
-      Origin = 'status'
-      FixedChar = True
-      Size = 1
-    end
-    object FDTabeladata_inc: TDateField
-      FieldName = 'data_inc'
-      Origin = 'data_inc'
-    end
-    object FDTabeladata_alt: TDateField
-      FieldName = 'data_alt'
-      Origin = 'data_alt'
-    end
-  end
-  inherited DataSource1: TDataSource
-    Left = 248
-    Top = 424
-  end
-  object FDQryDepto: TFDQuery
-    Active = True
-    Connection = DM.FDConnection1
-    SQL.Strings = (
-      'SELECT * FROM ticket.dbo.departamento ORDER BY descricao')
-    Left = 328
-    Top = 423
-  end
-  object DSDepto: TDataSource
-    DataSet = FDQryDepto
-    Left = 400
-    Top = 423
   end
 end

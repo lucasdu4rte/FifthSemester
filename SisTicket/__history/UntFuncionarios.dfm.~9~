@@ -3831,7 +3831,6 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Top = 424
   end
   object FDQryDepto: TFDQuery
-    Active = True
     Connection = DM.FDConnection1
     SQL.Strings = (
       'SELECT * FROM ticket.dbo.departamento ORDER BY descricao')

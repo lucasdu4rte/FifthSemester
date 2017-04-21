@@ -13,6 +13,14 @@ uses
 
 type
   TFrmFuncionarios = class(TFrmPadrao1)
+    FDTabelaid: TFDAutoIncField;
+    FDTabelanome: TStringField;
+    FDTabeladata_nasc: TStringField;
+    FDTabelaemail: TStringField;
+    FDTabelatelefone: TStringField;
+    FDTabelacelular: TStringField;
+    FDTabelaramal: TStringField;
+    FDTabelaid_departamento: TIntegerField;
     DBEdit1: TDBEdit;
     Label2: TLabel;
     Label3: TLabel;
@@ -29,21 +37,6 @@ type
     DBLookupComboBox1: TDBLookupComboBox;
     FDQryDepto: TFDQuery;
     DSDepto: TDataSource;
-    Label4: TLabel;
-    Label5: TLabel;
-    DBEdit7: TDBEdit;
-    DBEdit8: TDBEdit;
-    FDTabelaid: TFDAutoIncField;
-    FDTabelanome: TStringField;
-    FDTabeladata_nasc: TStringField;
-    FDTabelaemail: TStringField;
-    FDTabelatelefone: TStringField;
-    FDTabelacelular: TStringField;
-    FDTabelaramal: TStringField;
-    FDTabelaid_departamento: TIntegerField;
-    FDTabelastatus: TStringField;
-    FDTabeladata_inc: TDateField;
-    FDTabeladata_alt: TDateField;
   private
     { Private declarations }
   public
