@@ -29,10 +29,6 @@ type
     DBLookupComboBox1: TDBLookupComboBox;
     FDQryDepto: TFDQuery;
     DSDepto: TDataSource;
-    Label4: TLabel;
-    Label5: TLabel;
-    DBEdit7: TDBEdit;
-    DBEdit8: TDBEdit;
     FDTabelaid: TFDAutoIncField;
     FDTabelanome: TStringField;
     FDTabeladata_nasc: TStringField;
@@ -42,8 +38,6 @@ type
     FDTabelaramal: TStringField;
     FDTabelaid_departamento: TIntegerField;
     FDTabelastatus: TStringField;
-    FDTabeladata_inc: TDateField;
-    FDTabeladata_alt: TDateField;
   private
     { Private declarations }
   public

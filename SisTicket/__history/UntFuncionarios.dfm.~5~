@@ -20,70 +20,56 @@ inherited FrmFuncionarios: TFrmFuncionarios
     ExplicitHeight = 352
     object Label2: TLabel
       Left = 137
-      Top = 64
+      Top = 40
       Width = 27
       Height = 13
       Caption = 'Nome'
     end
     object Label3: TLabel
       Left = 68
-      Top = 104
+      Top = 80
       Width = 96
       Height = 13
       Caption = 'Data de Nascimento'
     end
     object Email: TLabel
       Left = 140
-      Top = 144
+      Top = 120
       Width = 24
       Height = 13
       Caption = 'Email'
     end
     object Telefone: TLabel
       Left = 122
-      Top = 184
+      Top = 160
       Width = 42
       Height = 13
       Caption = 'Telefone'
     end
     object Label6: TLabel
       Left = 131
-      Top = 224
+      Top = 200
       Width = 33
       Height = 13
       Caption = 'Celular'
     end
     object Label7: TLabel
       Left = 392
-      Top = 184
+      Top = 160
       Width = 29
       Height = 13
       Caption = 'Ramal'
     end
     object Label8: TLabel
       Left = 95
-      Top = 268
+      Top = 244
       Width = 69
       Height = 13
       Caption = 'Departamento'
     end
-    object Label4: TLabel
-      Left = 24
-      Top = 16
-      Width = 66
-      Height = 13
-      Caption = 'Data Inclus'#227'o'
-    end
-    object Label5: TLabel
-      Left = 275
-      Top = 16
-      Width = 72
-      Height = 13
-      Caption = 'Data Altera'#231#227'o'
-    end
     object DBEdit1: TDBEdit
       Left = 191
-      Top = 61
+      Top = 37
       Width = 386
       Height = 21
       DataField = 'nome'
@@ -92,7 +78,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBEdit2: TDBEdit
       Left = 192
-      Top = 101
+      Top = 77
       Width = 121
       Height = 21
       DataField = 'data_nasc'
@@ -101,7 +87,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBEdit3: TDBEdit
       Left = 192
-      Top = 141
+      Top = 117
       Width = 385
       Height = 21
       DataField = 'email'
@@ -110,7 +96,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBEdit4: TDBEdit
       Left = 192
-      Top = 181
+      Top = 157
       Width = 177
       Height = 21
       DataField = 'telefone'
@@ -119,7 +105,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBEdit5: TDBEdit
       Left = 448
-      Top = 181
+      Top = 157
       Width = 129
       Height = 21
       DataField = 'ramal'
@@ -128,7 +114,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBEdit6: TDBEdit
       Left = 191
-      Top = 221
+      Top = 197
       Width = 177
       Height = 21
       DataField = 'celular'
@@ -137,7 +123,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object DBLookupComboBox1: TDBLookupComboBox
       Left = 191
-      Top = 264
+      Top = 240
       Width = 178
       Height = 21
       DataField = 'id_departamento'
@@ -146,26 +132,6 @@ inherited FrmFuncionarios: TFrmFuncionarios
       ListField = 'descricao'
       ListSource = DSDepto
       TabOrder = 6
-    end
-    object DBEdit7: TDBEdit
-      Left = 353
-      Top = 13
-      Width = 121
-      Height = 21
-      DataField = 'data_alt'
-      DataSource = DataSource1
-      ReadOnly = True
-      TabOrder = 7
-    end
-    object DBEdit8: TDBEdit
-      Left = 96
-      Top = 13
-      Width = 121
-      Height = 21
-      DataField = 'data_inc'
-      DataSource = DataSource1
-      ReadOnly = True
-      TabOrder = 8
     end
   end
   inherited ImageList1: TImageList
@@ -3817,24 +3783,15 @@ inherited FrmFuncionarios: TFrmFuncionarios
       FixedChar = True
       Size = 1
     end
-    object FDTabeladata_inc: TDateField
-      FieldName = 'data_inc'
-      Origin = 'data_inc'
-    end
-    object FDTabeladata_alt: TDateField
-      FieldName = 'data_alt'
-      Origin = 'data_alt'
-    end
   end
   inherited DataSource1: TDataSource
     Left = 248
     Top = 424
   end
   object FDQryDepto: TFDQuery
-    Active = True
     Connection = DM.FDConnection1
     SQL.Strings = (
-      'SELECT * FROM ticket.dbo.departamento ORDER BY descricao')
+      'SELECT * FROM dbo.departamento ORDER BY descricao')
     Left = 328
     Top = 423
   end
