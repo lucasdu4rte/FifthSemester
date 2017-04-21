@@ -3,18 +3,36 @@
 	<Transactions>
     <Transaction>2017/04/14 15:38:17.000.167,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/04/14 15:38:29.000.675,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2017/04/14 15:39:52.000.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/04/14 15:39:52.000.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/04/14 15:39:52.000.927,E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/04/14 15:40:00.000.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.pas=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
     <Transaction>2017/04/14 15:40:00.000.450,E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2017/04/14 15:43:06.000.350,E:\Projeto Sistema 5S\FifthSemester\SisTicket\SisTicket.dproj=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.dfm=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm</Transaction>
     <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.pas=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.pas</Transaction>
+    <Transaction>2017/04/14 15:43:47.000.970,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPrincipal.dfm=E:\Projeto Sistema 5S\FifthSemester\UntPrincipal.dfm</Transaction>
     <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.dfm=E:\Projeto Sistema 5S\FifthSemester\UntDM.dfm</Transaction>
     <Transaction>2017/04/14 15:43:55.000.129,E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntDM.pas=E:\Projeto Sistema 5S\FifthSemester\UntDM.pas</Transaction>
     <Transaction>2017/04/15 14:00:06.000.311,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntPadrao1.pas</Transaction>
     <Transaction>2017/04/15 15:45:08.000.543,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas</Transaction>
-    <Transaction>2017/04/15 15:45:55.000.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.pas</Transaction>
     <Transaction>2017/04/15 15:45:55.000.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.dfm</Transaction>
+    <Transaction>2017/04/15 15:45:55.000.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.pas</Transaction>
+    <Transaction>2017/04/21 11:17:35.127,=E:\FifthSemester\SisTicket\Unit2.pas</Transaction>
+    <Transaction>2017/04/21 11:21:52.350,E:\FifthSemester\SisTicket\UntDepartamento.pas=E:\FifthSemester\SisTicket\Unit2.pas</Transaction>
+    <Transaction>2017/04/21 11:21:52.350,E:\FifthSemester\SisTicket\UntDepartamento.dfm=E:\FifthSemester\SisTicket\Unit2.dfm</Transaction>
+    <Transaction>2017/04/21 11:27:01.081,E:\FifthSemester\SisTicket\UntDepartamento.pas=</Transaction>
+    <Transaction>2017/04/21 11:29:08.575,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 11:35:36.237,E:\FifthSemester\SisTicket\UntPadraoSimples.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
+    <Transaction>2017/04/21 11:35:36.237,E:\FifthSemester\SisTicket\UntPadraoSimples.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 11:55:37.205,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 11:57:45.853,E:\FifthSemester\SisTicket\UntDepartamento.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 11:57:45.853,E:\FifthSemester\SisTicket\UntDepartamento.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
+    <Transaction>2017/04/21 14:27:53.770,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 14:33:36.393,E:\FifthSemester\SisTicket\UntCadDepartamento.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 14:33:36.394,E:\FifthSemester\SisTicket\UntCadDepartamento.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
+    <Transaction>2017/04/21 14:35:00.582,E:\FifthSemester\SisTicket\UntCadSimples.dfm=E:\FifthSemester\SisTicket\UntCadDepartamento.dfm</Transaction>
+    <Transaction>2017/04/21 14:35:00.582,E:\FifthSemester\SisTicket\UntCadSimples.pas=E:\FifthSemester\SisTicket\UntCadDepartamento.pas</Transaction>
+    <Transaction>2017/04/21 15:40:17.737,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 15:42:20.853,E:\FifthSemester\SisTicket\UntCadDepartamento.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+    <Transaction>2017/04/21 15:42:20.853,E:\FifthSemester\SisTicket\UntCadDepartamento.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

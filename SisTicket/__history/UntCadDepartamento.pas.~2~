@@ -1,0 +1,36 @@
+unit UntCadDepartamento;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UntCadSimples, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls;
+
+type
+  TFrmCadDepartamento = class(TFrmCadSimples)
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadDepartamento: TFrmCadDepartamento;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmCadDepartamento.FormActivate(Sender: TObject);
+begin
+  inherited;
+  FDTable1.Close;
+  FDTable1.Open();
+end;
+
+end.

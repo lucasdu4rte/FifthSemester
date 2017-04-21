@@ -60,7 +60,7 @@ implementation
 
 {$R *.dfm}
 
-uses UntDM, UntDepartamento;
+uses UntDM, UntDepartamento, DB;
 
 procedure TFrmFuncionarios.FormActivate(Sender: TObject);
 begin

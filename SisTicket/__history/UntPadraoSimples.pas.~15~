@@ -1,0 +1,78 @@
+unit UntPadraoSimples;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Mask, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls,
+  Vcl.ToolWin, System.ImageList, Vcl.ImgList;
+
+type
+  TFrmPadraoSimples = class(TForm)
+    Panel1: TPanel;
+    Label2: TLabel;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    FDQuery1: TFDQuery;
+    ImageList1: TImageList;
+    ImageList2: TImageList;
+    ImageList3: TImageList;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
+    ToolButton7: TToolButton;
+    ToolButton8: TToolButton;
+    ToolButton5: TToolButton;
+    Panel2: TPanel;
+    Label1: TLabel;
+    Edit1: TEdit;
+    procedure Edit1Change(Sender: TObject);
+    procedure ToolButton8Click(Sender: TObject);
+    procedure ToolButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPadraoSimples: TFrmPadraoSimples;
+
+implementation
+
+{$R *.dfm}
+
+uses UntDM;
+
+procedure TFrmPadraoSimples.Edit1Change(Sender: TObject);
+begin
+  FDQuery1.Locate('descricao', Edit1.Text, [loCaseInsensitive,loPartialKey]);
+end;
+
+procedure TFrmPadraoSimples.ToolButton3Click(Sender: TObject);
+var confExcl: integer;
+begin
+  confExcl:= Application.MessageBox('Confirma a exclusão deste registro?', 'Atenção', MB_YESNO+MB_DEFBUTTON2+MB_ICONQUESTION);
+
+  if confExcl = IDYES then
+  begin
+    FDQuery1.Delete;
+
+    Application.MessageBox('O registro foi esxclui com sucesso.', 'Informação', MB_OK+MB_ICONINFORMATION);
+  end
+  else
+    Application.MessageBox('A exclusão do registro do registro foi abortada.', 'Informação', MB_OK+MB_ICONERROR);
+end;
+
+procedure TFrmPadraoSimples.ToolButton8Click(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

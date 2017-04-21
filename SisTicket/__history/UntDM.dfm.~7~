@@ -9,7 +9,6 @@ object DM: TDM
       'ApplicationName=Architect'
       'Workstation=LCS-NOTEBOOK'
       'MARS=yes'
-      'DATABASE=ticket'
       'DriverID=MSSQL')
     Connected = True
     LoginPrompt = False

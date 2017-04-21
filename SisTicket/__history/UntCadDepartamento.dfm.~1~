@@ -1,0 +1,33 @@
+inherited FrmCadDepartamento: TFrmCadDepartamento
+  Caption = 'Cadastro Departamentos'
+  ExplicitWidth = 454
+  ExplicitHeight = 207
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Caption = 'Cadastro Departamentos'
+  end
+  inherited ToolBar1: TToolBar
+    ExplicitTop = 49
+    ExplicitWidth = 448
+  end
+  inherited StatusBar1: TStatusBar
+    ExplicitLeft = 0
+    ExplicitTop = 159
+    ExplicitWidth = 448
+  end
+  inherited PnlFicha: TPanel
+    ExplicitTop = 98
+    ExplicitWidth = 448
+    ExplicitHeight = 61
+    inherited DBEdit1: TDBEdit
+      Left = 68
+      DataField = 'descricao'
+      ExplicitLeft = 68
+    end
+  end
+  inherited FDTable1: TFDTable
+    UpdateOptions.UpdateTableName = 'ticket.dbo.departamento'
+    TableName = 'ticket.dbo.departamento'
+  end
+end

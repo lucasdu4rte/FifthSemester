@@ -1,0 +1,120 @@
+object FrmCadSimples: TFrmCadSimples
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'FrmCadSimples'
+  ClientHeight = 184
+  ClientWidth = 448
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 16
+    Top = 120
+    Width = 46
+    Height = 13
+    Caption = 'Descri'#231#227'o'
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 448
+    Height = 49
+    Align = alTop
+    Color = clBlack
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 49
+    Width = 448
+    Height = 49
+    BorderWidth = 1
+    ButtonHeight = 40
+    ButtonWidth = 43
+    Caption = 'ToolBar1'
+    DisabledImages = FrmPadraoSimples.ImageList3
+    EdgeBorders = [ebTop, ebBottom]
+    HotImages = FrmPadraoSimples.ImageList3
+    Images = FrmPadraoSimples.ImageList1
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    ExplicitTop = 41
+    ExplicitWidth = 457
+    object ToolButton4: TToolButton
+      Left = 0
+      Top = 0
+      Width = 313
+      Caption = 'ToolButton4'
+      ImageIndex = 7
+      Style = tbsSeparator
+    end
+    object ToolButton1: TToolButton
+      Left = 313
+      Top = 0
+      Caption = 'ToolButton1'
+      ImageIndex = 3
+    end
+    object ToolButton2: TToolButton
+      Left = 356
+      Top = 0
+      Caption = 'ToolButton2'
+      ImageIndex = 4
+    end
+    object ToolButton3: TToolButton
+      Left = 399
+      Top = 0
+      Caption = 'ToolButton3'
+      ImageIndex = 6
+      OnClick = ToolButton3Click
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 165
+    Width = 448
+    Height = 19
+    Panels = <
+      item
+        Width = 50
+      end>
+    ExplicitLeft = 176
+    ExplicitTop = 136
+    ExplicitWidth = 0
+  end
+  object DBEdit1: TDBEdit
+    Left = 76
+    Top = 117
+    Width = 333
+    Height = 21
+    DataSource = DataSource1
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    DataSet = FDTable1
+    Left = 320
+    Top = 152
+  end
+  object FDTable1: TFDTable
+    IndexFieldNames = 'id'
+    Connection = DM.FDConnection1
+    Left = 384
+    Top = 152
+  end
+end

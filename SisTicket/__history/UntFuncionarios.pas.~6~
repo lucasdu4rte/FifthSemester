@@ -9,7 +9,7 @@ uses
   FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
   Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.ImageList,
   Vcl.ImgList, Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Buttons, Vcl.ExtCtrls,
-  Vcl.ComCtrls, Vcl.ToolWin, Vcl.Mask;
+  Vcl.ComCtrls, Vcl.ToolWin, Vcl.Mask, Data.DB;
 
 type
   TFrmFuncionarios = class(TFrmPadrao1)
@@ -46,7 +46,6 @@ type
     FDTabeladata_alt: TDateField;
     SpeedButton1: TSpeedButton;
     procedure SpeedButton1Click(Sender: TObject);
-    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,13 +60,6 @@ implementation
 {$R *.dfm}
 
 uses UntDM, UntDepartamento;
-
-procedure TFrmFuncionarios.FormActivate(Sender: TObject);
-begin
-  inherited;
-  FDQryDepto.Close;
-  FDQryDepto.Open();
-end;
 
 procedure TFrmFuncionarios.SpeedButton1Click(Sender: TObject);
 begin

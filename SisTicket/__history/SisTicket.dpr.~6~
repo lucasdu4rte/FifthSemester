@@ -7,9 +7,7 @@ uses
   UntPadrao1 in 'UntPadrao1.pas' {FrmPadrao1},
   UntFuncionarios in 'UntFuncionarios.pas' {FrmFuncionarios},
   UntPadraoSimples in 'UntPadraoSimples.pas' {FrmPadraoSimples},
-  UntDepartamento in 'UntDepartamento.pas' {FrmDepartamento},
-  UntCadSimples in 'UntCadSimples.pas' {FrmCadSimples},
-  UntCadDepartamento in 'UntCadDepartamento.pas' {FrmCadDepartamento};
+  UntDepartamento in 'UntDepartamento.pas' {FrmDepartamento};
 
 {$R *.res}
 
@@ -22,7 +20,5 @@ begin
   Application.CreateForm(TFrmFuncionarios, FrmFuncionarios);
   Application.CreateForm(TFrmPadraoSimples, FrmPadraoSimples);
   Application.CreateForm(TFrmDepartamento, FrmDepartamento);
-  Application.CreateForm(TFrmCadSimples, FrmCadSimples);
-  Application.CreateForm(TFrmCadDepartamento, FrmCadDepartamento);
   Application.Run;
 end.

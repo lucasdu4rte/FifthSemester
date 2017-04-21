@@ -46,7 +46,6 @@ type
     FDTabeladata_alt: TDateField;
     SpeedButton1: TSpeedButton;
     procedure SpeedButton1Click(Sender: TObject);
-    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,13 +60,6 @@ implementation
 {$R *.dfm}
 
 uses UntDM, UntDepartamento;
-
-procedure TFrmFuncionarios.FormActivate(Sender: TObject);
-begin
-  inherited;
-  FDQryDepto.Close;
-  FDQryDepto.Open();
-end;
 
 procedure TFrmFuncionarios.SpeedButton1Click(Sender: TObject);
 begin
