@@ -1,321 +1,193 @@
-object FrmPadrao1: TFrmPadrao1
-  Left = 0
-  Top = 0
-  BorderIcons = []
-  BorderStyle = bsDialog
-  Caption = 'FormBasica'
-  ClientHeight = 390
-  ClientWidth = 734
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
-  Position = poScreenCenter
+inherited Frmchamado: TFrmchamado
+  Caption = 'FrmChamado'
+  ClientHeight = 659
+  OnActivate = FormActivate
+  ExplicitTop = -119
+  ExplicitHeight = 687
   PixelsPerInch = 96
   TextHeight = 13
-  object ToolBar1: TToolBar
-    Left = 0
-    Top = 0
-    Width = 734
-    Height = 49
-    BorderWidth = 1
-    ButtonHeight = 44
-    ButtonWidth = 53
-    Caption = 'ToolBar1'
-    DisabledImages = ImageList2
-    EdgeBorders = [ebTop, ebBottom]
-    HotImages = ImageList3
-    Images = ImageList1
-    ParentShowHint = False
-    ShowCaptions = True
-    ShowHint = True
-    TabOrder = 0
-    object btn_Pesquisa: TToolButton
-      Left = 0
-      Top = 0
-      Hint = 'Pesquisar Registro'
-      Caption = '&Pesquisar'
-      ImageIndex = 0
+  inherited StatusBar1: TStatusBar
+    Top = 640
+  end
+  inherited PanelEntrada: TPanel
+    inherited Label1: TLabel
+      Width = 98
+      Caption = 'C'#243'digo do chamado:'
+      ExplicitWidth = 98
     end
-    object btn_Ordenar: TToolButton
-      Left = 53
-      Top = 0
-      Hint = 'Ordenar Registro'
-      Caption = '&Ordenar'
-      ImageIndex = 1
+    inherited btnOK: TSpeedButton
+      Left = 252
+      Top = 2
+      ExplicitLeft = 252
+      ExplicitTop = 2
     end
-    object separador1: TToolButton
-      Left = 106
-      Top = 0
-      Width = 8
-      Caption = 'separador1'
-      ImageIndex = 2
-      Style = tbsSeparator
-    end
-    object btn_primeiro: TToolButton
-      Left = 114
-      Top = 0
-      Hint = 'Primeiro Registro'
-      Caption = '&Primeiro'
-      ImageIndex = 2
-      OnClick = btn_primeiroClick
-    end
-    object btn_Anterior: TToolButton
-      Left = 167
-      Top = 0
-      Hint = 'Registro Anterior'
-      Caption = '&Anterior'
-      ImageIndex = 3
-      OnClick = btn_AnteriorClick
-    end
-    object btn_proximo: TToolButton
-      Left = 220
-      Top = 0
-      Hint = 'Ultimo Registro'
-      Caption = '&Pr'#243'ximo'
-      ImageIndex = 4
-      OnClick = btn_proximoClick
-    end
-    object btn_ultimo: TToolButton
-      Left = 273
-      Top = 0
-      Hint = 'Ultimo Registro'
-      Caption = '&Ultimo'
-      ImageIndex = 5
-      OnClick = btn_ultimoClick
-    end
-    object Separador2: TToolButton
-      Left = 326
-      Top = 0
-      Width = 8
-      Caption = 'Separador2'
-      ImageIndex = 6
-      Style = tbsSeparator
-    end
-    object btn_Inserir: TToolButton
-      Left = 334
-      Top = 0
-      Hint = 'Inserir Registro'
-      Caption = '&Inserir'
-      ImageIndex = 6
-      OnClick = btn_InserirClick
-    end
-    object btn_Editar: TToolButton
-      Left = 387
-      Top = 0
-      Hint = 'Alterar Registro'
-      Caption = '&Editar'
-      ImageIndex = 7
-      OnClick = btn_EditarClick
-    end
-    object btn_Excluir: TToolButton
-      Left = 440
-      Top = 0
-      Caption = '&Excluir'
-      ImageIndex = 8
-      OnClick = btn_ExcluirClick
-    end
-    object Separador3: TToolButton
-      Left = 493
-      Top = 0
-      Width = 8
-      Caption = 'Separador3'
-      ImageIndex = 9
-      Style = tbsSeparator
-    end
-    object btn_salvar: TToolButton
-      Left = 501
-      Top = 0
-      Hint = 'Salvar Registro'
-      Caption = '&Salvar'
-      ImageIndex = 9
-      OnClick = btn_salvarClick
-    end
-    object btn_Cancelar: TToolButton
-      Left = 554
-      Top = 0
-      Hint = 'Cancelar Registro'
-      Caption = '&Cancelar'
-      ImageIndex = 10
-      OnClick = btn_CancelarClick
-    end
-    object Separador4: TToolButton
-      Left = 607
-      Top = 0
-      Width = 8
-      Caption = 'Separador4'
-      ImageIndex = 11
-      Style = tbsSeparator
-    end
-    object btn_Imprimir: TToolButton
-      Left = 615
-      Top = 0
-      Hint = 'Imprimir Registro'
-      Caption = '&Imprimir'
-      ImageIndex = 11
-    end
-    object Separador5: TToolButton
-      Left = 668
-      Top = 0
-      Width = 8
-      Caption = 'Separador5'
-      ImageIndex = 12
-      Style = tbsSeparator
-    end
-    object btn_sair: TToolButton
-      Left = 676
-      Top = 0
-      Hint = 'Sair'
-      Caption = '&Sair'
-      ImageIndex = 12
-      OnClick = btn_sairClick
+    inherited valorCampo: TEdit
+      Left = 127
+      Top = 3
+      ExplicitLeft = 127
+      ExplicitTop = 3
     end
   end
-  object StatusBar1: TStatusBar
-    Left = 0
-    Top = 371
-    Width = 734
-    Height = 19
-    Panels = <
-      item
-        Width = 75
-      end
-      item
-        Width = 75
-      end
-      item
-        Width = 250
-      end
-      item
-        Width = 50
-      end>
-  end
-  object PanelEntrada: TPanel
-    Left = 0
-    Top = 49
-    Width = 734
-    Height = 30
-    Align = alTop
-    BevelInner = bvRaised
-    BevelOuter = bvLowered
-    TabOrder = 2
-    object LblStatus: TLabel
-      Left = 654
+  inherited PnlFicha: TPanel
+    Height = 561
+    ExplicitLeft = -8
+    ExplicitTop = 39
+    ExplicitHeight = 561
+    object Label2: TLabel
+      Left = 39
+      Top = 9
+      Width = 83
+      Height = 13
+      Caption = 'Data de inclus'#227'o:'
+    end
+    object Label3: TLabel
+      Left = 312
+      Top = 9
+      Width = 90
+      Height = 13
+      Caption = 'Data de altera'#231#227'o:'
+    end
+    object Label4: TLabel
+      Left = 19
+      Top = 37
+      Width = 106
+      Height = 13
+      Caption = 'Prazo para conclus'#227'o:'
+    end
+    object Label5: TLabel
+      Left = 67
+      Top = 67
+      Width = 53
+      Height = 13
+      Caption = 'Solicitante:'
+    end
+    object Label6: TLabel
+      Left = 55
+      Top = 94
+      Width = 65
+      Height = 13
+      Caption = 'Respons'#225'vel:'
+    end
+    object Label7: TLabel
+      Left = 128
+      Top = 152
+      Width = 46
+      Height = 13
+      Caption = 'Descri'#231#227'o'
+    end
+    object Label9: TLabel
+      Left = 25
+      Top = 123
+      Width = 97
+      Height = 13
+      Caption = 'Motivo do chamado:'
+    end
+    object Label10: TLabel
+      Left = 128
+      Top = 266
+      Width = 63
+      Height = 13
+      Caption = 'Observa'#231#245'es'
+    end
+    object DBEdit1: TDBEdit
+      Left = 128
       Top = 6
-      Width = 59
-      Height = 13
-      Caption = 'Bloqueado'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object Label1: TLabel
-      Left = 29
-      Top = 7
-      Width = 48
-      Height = 13
-      Caption = 'ID-C'#243'digo'
-    end
-    object btnOK: TSpeedButton
-      Left = 205
-      Top = 4
-      Width = 23
-      Height = 22
-      Hint = 'Pesquisar este Registro'
-      Glyph.Data = {
-        36060000424D3606000000000000360000002800000020000000100000000100
-        18000000000000060000C40E0000C40E00000000000000000000FF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FF006600006600FF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF656565656565FF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FF0066001EB2311FB133006600FF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF6565659A9A9A9A9A9A65
-        6565FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FF00660031C24F22B7381AB02D21B437006600FF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF656565ABABAB9E9E9E9797979C
-        9C9C656565FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        00660047D36D3BCB5E25A83B0066001BA92E1DB132006600FF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FF656565BFBFBFB5B5B598989865656594
-        9494999999656565FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF006600
-        4FD67953DE7F31B54D006600FF00FF006600179D271EAE31006600FF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FF656565C4C4C4CACACAA5A5A5656565FF00FF65
-        65658C8C8C989898656565FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        00660041C563006600FF00FFFF00FFFF00FFFF00FF00660019AA2B006600FF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FF656565B5B5B5656565FF00FFFF00FFFF
-        00FFFF00FF656565939393656565FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FF006600FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF006600149D210066
-        00FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF656565FF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FF6565658A8A8A656565FF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0066
-        00006600FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FF656565656565FF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FF006600006600FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FF656565656565FF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
-        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
-      NumGlyphs = 2
-    end
-    object valorCampo: TEdit
-      Left = 78
-      Top = 4
       Width = 121
       Height = 21
+      DataField = 'data_inc'
+      DataSource = DataSource1
       TabOrder = 0
     end
-    object CheckHabilita: TDBCheckBox
-      Left = 356
+    object DBEdit2: TDBEdit
+      Left = 408
       Top = 6
-      Width = 118
-      Height = 17
-      Caption = 'Habilitar este registro'
-      DataField = 'STATUS'
+      Width = 121
+      Height = 21
+      DataField = 'data_alt'
       DataSource = DataSource1
       TabOrder = 1
-      ValueChecked = 'S'
-      ValueUnchecked = 'N'
+    end
+    object DBEdit3: TDBEdit
+      Left = 127
+      Top = 33
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+    object DBEdit4: TDBEdit
+      Left = 126
+      Top = 64
+      Width = 53
+      Height = 21
+      DataField = 'id_solicitante'
+      DataSource = DataSource1
+      TabOrder = 3
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 185
+      Top = 64
+      Width = 417
+      Height = 21
+      DataField = 'id_solicitante'
+      DataSource = DataSource1
+      KeyField = 'id'
+      ListField = 'nome'
+      ListSource = DSFuncionarios
+      TabOrder = 4
+    end
+    object DBEdit5: TDBEdit
+      Left = 126
+      Top = 91
+      Width = 53
+      Height = 21
+      DataField = 'id_responsavel'
+      DataSource = DataSource1
+      TabOrder = 5
+    end
+    object DBLookupComboBox2: TDBLookupComboBox
+      Left = 185
+      Top = 91
+      Width = 417
+      Height = 21
+      DataField = 'id_responsavel'
+      DataSource = DataSource1
+      KeyField = 'id'
+      ListField = 'nome'
+      ListSource = DSFuncionarios
+      TabOrder = 6
+    end
+    object DBLookupComboBox3: TDBLookupComboBox
+      Left = 126
+      Top = 118
+      Width = 251
+      Height = 21
+      DataField = 'id'
+      DataSource = DSTipo
+      KeyField = 'id'
+      ListField = 'descricao'
+      ListSource = DSTipo
+      TabOrder = 7
+    end
+    object DBMemo1: TDBMemo
+      Left = 126
+      Top = 171
+      Width = 476
+      Height = 89
+      TabOrder = 8
+    end
+    object DBMemo2: TDBMemo
+      Left = 126
+      Top = 285
+      Width = 476
+      Height = 89
+      TabOrder = 9
     end
   end
-  object PnlFicha: TPanel
-    Left = 0
-    Top = 79
-    Width = 734
-    Height = 292
-    Align = alClient
-    TabOrder = 3
-  end
-  object ImageList1: TImageList
-    Height = 24
-    Width = 24
-    Left = 24
-    Top = 296
+  inherited ImageList1: TImageList
+    Left = 8
+    Top = 536
     Bitmap = {
-      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1510,13 +1382,11 @@ object FrmPadrao1: TFrmPadrao1
       3FFC003FFFFFF7FFFFFFFF00FFFF00FF00000000000000000000000000000000
       000000000000}
   end
-  object ImageList2: TImageList
-    Height = 24
-    Width = 24
-    Left = 64
-    Top = 296
+  inherited ImageList2: TImageList
+    Left = 48
+    Top = 536
     Bitmap = {
-      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2711,13 +2581,11 @@ object FrmPadrao1: TFrmPadrao1
       3FFC003FFFFFF7FFFFFFFF00FFFF00FF00000000000000000000000000000000
       000000000000}
   end
-  object ImageList3: TImageList
-    Height = 24
-    Width = 24
-    Left = 120
-    Top = 297
+  inherited ImageList3: TImageList
+    Left = 104
+    Top = 537
     Bitmap = {
-      494C01010D001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B
@@ -3912,14 +3780,90 @@ object FrmPadrao1: TFrmPadrao1
       3FFC003FFFFFF7FFFFFFFF00FFFF00FF00000000000000000000000000000000
       000000000000}
   end
-  object FDTabela: TFDTable
-    Connection = DM.FDConnection1
-    Left = 184
-    Top = 296
+  inherited FDTabela: TFDTable
+    IndexFieldNames = 'id'
+    UpdateOptions.UpdateTableName = 'chamado'
+    TableName = 'chamado'
+    Left = 168
+    Top = 536
+    object FDTabelaid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDTabelaid_responsavel: TIntegerField
+      FieldName = 'id_responsavel'
+      Origin = 'id_responsavel'
+    end
+    object FDTabelaid_solicitante: TIntegerField
+      FieldName = 'id_solicitante'
+      Origin = 'id_solicitante'
+      Required = True
+    end
+    object FDTabeladata_inc: TDateField
+      FieldName = 'data_inc'
+      Origin = 'data_inc'
+    end
+    object FDTabeladata_alt: TDateField
+      FieldName = 'data_alt'
+      Origin = 'data_alt'
+    end
+    object FDTabeladata_prazo: TDateField
+      FieldName = 'data_prazo'
+      Origin = 'data_prazo'
+    end
+    object FDTabeladescricao: TStringField
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      Size = 255
+    end
+    object FDTabelaobservacao: TStringField
+      FieldName = 'observacao'
+      Origin = 'observacao'
+      Size = 400
+    end
+    object FDTabelaid_status: TIntegerField
+      FieldName = 'id_status'
+      Origin = 'id_status'
+    end
+    object FDTabelaid_tipo: TIntegerField
+      FieldName = 'id_tipo'
+      Origin = 'id_tipo'
+    end
+    object FDTabelastatus: TStringField
+      FieldName = 'status'
+      Origin = 'status'
+      FixedChar = True
+      Size = 1
+    end
   end
-  object DataSource1: TDataSource
-    DataSet = FDTabela
-    Left = 240
-    Top = 296
+  inherited DataSource1: TDataSource
+    Left = 224
+    Top = 536
+  end
+  object DSFuncionarios: TDataSource
+    DataSet = FDQryFuncionarios
+    Left = 384
+    Top = 535
+  end
+  object FDQryFuncionarios: TFDQuery
+    Connection = DM.FDConnection1
+    SQL.Strings = (
+      'SELECT id,nome FROM funcionario ORDER BY nome')
+    Left = 296
+    Top = 535
+  end
+  object FDQryTipo: TFDQuery
+    Connection = DM.FDConnection1
+    SQL.Strings = (
+      'SELECT id,descricao from tipo ORDER BY descricao')
+    Left = 464
+    Top = 535
+  end
+  object DSTipo: TDataSource
+    DataSet = FDQryTipo
+    Left = 520
+    Top = 535
   end
 end

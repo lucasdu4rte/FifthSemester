@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <BorlandProject>
 	<Transactions>
     <Transaction>2017/04/14 15:38:17.000.167,=C:\Users\Daniel Pelissari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
@@ -36,3 +37,6 @@
     <Transaction>2017/04/21 15:42:20.853,E:\FifthSemester\SisTicket\UntCadDepartamento.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>
+=======
+<BorlandProject/>
+>>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d

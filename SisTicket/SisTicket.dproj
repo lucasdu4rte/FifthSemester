@@ -100,6 +100,7 @@
             <Form>FrmFuncionarios</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+<<<<<<< HEAD
         <DCCReference Include="UntPadraoSimples.pas">
             <Form>FrmPadraoSimples</Form>
             <FormType>dfm</FormType>
@@ -114,6 +115,10 @@
         </DCCReference>
         <DCCReference Include="UntCadDepartamento.pas">
             <Form>FrmCadDepartamento</Form>
+=======
+        <DCCReference Include="UntChamado.pas">
+            <Form>Frmchamado</Form>
+>>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
