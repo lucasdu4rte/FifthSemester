@@ -12,7 +12,7 @@ CREATE TABLE tipo (
 
 CREATE TABLE departamento (
 	id int PRIMARY KEY identity(1,1),
-	descricao varchar(250) not null
+	descricao varchar(250) not null unique
 );
 
 CREATE TABLE funcionario(

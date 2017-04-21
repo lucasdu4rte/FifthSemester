@@ -1,13 +1,12 @@
 inherited FrmFuncionarios: TFrmFuncionarios
   Caption = 'FrmFuncionarios'
   ClientHeight = 506
-  ExplicitWidth = 740
-  ExplicitHeight = 535
+  ExplicitHeight = 534
   PixelsPerInch = 96
   TextHeight = 13
   inherited StatusBar1: TStatusBar
     Top = 487
-    ExplicitTop = 371
+    ExplicitTop = 487
   end
   inherited PanelEntrada: TPanel
     inherited CheckHabilita: TDBCheckBox
@@ -16,8 +15,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
   end
   inherited PnlFicha: TPanel
     Height = 408
-    ExplicitTop = 80
-    ExplicitHeight = 352
+    ExplicitHeight = 408
     object Label2: TLabel
       Left = 137
       Top = 64
@@ -154,7 +152,6 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Height = 21
       DataField = 'data_alt'
       DataSource = DataSource1
-      ReadOnly = True
       TabOrder = 7
     end
     object DBEdit8: TDBEdit
@@ -164,7 +161,6 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Height = 21
       DataField = 'data_inc'
       DataSource = DataSource1
-      ReadOnly = True
       TabOrder = 8
     end
   end
@@ -172,7 +168,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 32
     Top = 424
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1371,7 +1367,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 72
     Top = 424
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2570,7 +2566,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 128
     Top = 425
     Bitmap = {
-      494C01010D001800240018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B
@@ -3831,7 +3827,6 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Top = 424
   end
   object FDQryDepto: TFDQuery
-    Active = True
     Connection = DM.FDConnection1
     SQL.Strings = (
       'SELECT * FROM ticket.dbo.departamento ORDER BY descricao')
