@@ -16,5 +16,8 @@
     <Transaction>2017/04/15 15:45:08.000.543,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas</Transaction>
     <Transaction>2017/04/15 15:45:55.000.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.pas</Transaction>
     <Transaction>2017/04/15 15:45:55.000.542,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntFuncionarios.dfm</Transaction>
+    <Transaction>2017/04/20 15:28:34.000.579,=E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas</Transaction>
+    <Transaction>2017/04/20 15:28:53.000.568,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.dfm=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntChamado.dfm</Transaction>
+    <Transaction>2017/04/20 15:28:53.000.568,E:\Projeto Sistema 5S\FifthSemester\SisTicket\Unit2.pas=E:\Projeto Sistema 5S\FifthSemester\SisTicket\UntChamado.pas</Transaction>
   </Transactions>
 </BorlandProject>

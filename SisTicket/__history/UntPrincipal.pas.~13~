@@ -39,7 +39,7 @@ implementation
 
 {$R *.dfm}
 
-uses UntPadrao1, UntFuncionarios, UntChamado;
+uses UntPadrao1, UntFuncionarios;
 
 procedure TFrmMenuPrincipal.Action1Execute(Sender: TObject);
 begin
@@ -48,7 +48,7 @@ end;
 
 procedure TFrmMenuPrincipal.cad_ChamadoExecute(Sender: TObject);
 begin
-  frmchamado.showmodal;
+  ShowMessage('Chamados!');
 end;
 
 procedure TFrmMenuPrincipal.cad_FuncionarioExecute(Sender: TObject);
