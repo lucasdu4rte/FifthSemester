@@ -2,12 +2,12 @@ CREATE DATABASE ticket
 use ticket
 CREATE TABLE status_chamado (
 	id int PRIMARY KEY identity(1,1),
-	descricao varchar(200)
+	descricao varchar(200) unique
 );
 
 CREATE TABLE tipo (
 	id int PRIMARY KEY identity(1,1),
-	descricao varchar(200)
+	descricao varchar(200) unique
 );
 
 CREATE TABLE departamento (
