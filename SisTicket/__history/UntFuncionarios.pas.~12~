@@ -44,10 +44,7 @@ type
     FDTabelastatus: TStringField;
     FDTabeladata_inc: TDateField;
     FDTabeladata_alt: TDateField;
-    SpeedButton1: TSpeedButton;
-    Panel1: TPanel;
     procedure FormActivate(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,12 +67,6 @@ begin
   FDTabela.Open();
   FDQryDepto.Close;
   FDQryDepto.Open();
-end;
-
-procedure TFrmFuncionarios.SpeedButton1Click(Sender: TObject);
-begin
-  inherited;
-  FrmDepartamento.ShowModal;
 end;
 
 end.

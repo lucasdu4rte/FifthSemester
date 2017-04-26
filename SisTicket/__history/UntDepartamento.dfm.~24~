@@ -13,7 +13,6 @@ inherited FrmDepartamento: TFrmDepartamento
     Font.Height = -21
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitWidth = 460
   end
   inherited DBGrid1: TDBGrid
     Top = 141
@@ -37,7 +36,6 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited ToolBar1: TToolBar
     Width = 460
-    ExplicitWidth = 460
     inherited btn_inserir: TToolButton
       OnClick = ToolButton1Click
     end
@@ -47,14 +45,13 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited Panel2: TPanel
     Width = 460
-    ExplicitWidth = 460
   end
   inherited DataSource1: TDataSource
     Left = 320
   end
   inherited ImageList1: TImageList
     Bitmap = {
-      494C0101070018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800180018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -657,7 +654,7 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited ImageList2: TImageList
     Bitmap = {
-      494C0101070018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800180018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1260,7 +1257,7 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited ImageList3: TImageList
     Bitmap = {
-      494C0101070018001C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800180018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1863,19 +1860,7 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited FDTable1: TFDTable
     IndexFieldNames = 'id'
-    UpdateOptions.UpdateTableName = 'departamento'
-    TableName = 'departamento'
-    object FDTable1id: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object FDTable1descricao: TStringField
-      FieldName = 'descricao'
-      Origin = 'descricao'
-      Required = True
-      Size = 250
-    end
+    UpdateOptions.UpdateTableName = 'ticket.dbo.departamento'
+    TableName = 'ticket.dbo.departamento'
   end
 end

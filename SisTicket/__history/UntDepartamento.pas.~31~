@@ -51,6 +51,9 @@ end;
 procedure TFrmDepartamento.ToolButton1Click(Sender: TObject);
 begin
   inherited;
+
+  //FDTable1.NextRecordSet;
+
   // Habilita Botoes
   FrmCadDepartamento.btn_salvar.Enabled:= true;
   FrmCadDepartamento.btn_cancelar.Enabled:= true;

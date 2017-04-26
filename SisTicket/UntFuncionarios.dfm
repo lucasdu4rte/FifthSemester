@@ -1,27 +1,29 @@
 inherited FrmFuncionarios: TFrmFuncionarios
-  Caption = 'FrmFuncionarios'
-  ClientHeight = 506
-<<<<<<< HEAD
+  Caption = 'Funcionarios'
+  ClientHeight = 439
+  Font.Color = clBlack
   OnActivate = FormActivate
-  ExplicitTop = -74
   ExplicitWidth = 740
-  ExplicitHeight = 535
-=======
-  ExplicitHeight = 534
->>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d
+  ExplicitHeight = 468
   PixelsPerInch = 96
   TextHeight = 13
+  inherited ToolBar1: TToolBar
+    Top = 44
+    ExplicitTop = 44
+  end
   inherited StatusBar1: TStatusBar
-    Top = 487
+    Top = 420
     ExplicitTop = 487
   end
   inherited PanelEntrada: TPanel
+    Top = 93
     inherited CheckHabilita: TDBCheckBox
       DataField = 'status'
     end
   end
   inherited PnlFicha: TPanel
-    Height = 408
+    Top = 123
+    Height = 297
     ExplicitHeight = 408
     object Label2: TLabel
       Left = 137
@@ -67,7 +69,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     end
     object Label8: TLabel
       Left = 95
-      Top = 268
+      Top = 264
       Width = 69
       Height = 13
       Caption = 'Departamento'
@@ -87,11 +89,10 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Caption = 'Data Altera'#231#227'o'
     end
     object SpeedButton1: TSpeedButton
-      Left = 375
-      Top = 263
+      Left = 376
+      Top = 259
       Width = 23
       Height = 22
-      Caption = '+'
       OnClick = SpeedButton1Click
     end
     object DBEdit1: TDBEdit
@@ -149,8 +150,8 @@ inherited FrmFuncionarios: TFrmFuncionarios
       TabOrder = 5
     end
     object DBLookupComboBox1: TDBLookupComboBox
-      Left = 191
-      Top = 264
+      Left = 192
+      Top = 260
       Width = 178
       Height = 21
       DataField = 'id_departamento'
@@ -179,15 +180,30 @@ inherited FrmFuncionarios: TFrmFuncionarios
       TabOrder = 8
     end
   end
+  object Panel1: TPanel [4]
+    Left = 0
+    Top = 0
+    Width = 734
+    Height = 44
+    Align = alTop
+    Caption = 'Cadastro de Funcionarios'
+    Color = clBlack
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 4
+    ExplicitLeft = 53
+    ExplicitWidth = 185
+  end
   inherited ImageList1: TImageList
     Left = 32
     Top = 424
     Bitmap = {
-<<<<<<< HEAD
       494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
-=======
-      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
->>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1386,11 +1402,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 72
     Top = 424
     Bitmap = {
-<<<<<<< HEAD
       494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
-=======
-      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
->>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2589,11 +2601,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 128
     Top = 425
     Bitmap = {
-<<<<<<< HEAD
       494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
-=======
-      494C01010D001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
->>>>>>> d8106558f11c8e1a558abb45132daa5b7d04428d
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B

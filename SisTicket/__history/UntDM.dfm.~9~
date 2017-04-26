@@ -4,15 +4,14 @@ object DM: TDM
   Width = 545
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'Server=siunimep2015.database.windows.net'
-      'OSAuthent=No'
+      'SERVER=DANIELPELISSARI\SQLEXPRESS'
+      'OSAuthent=Yes'
       'ApplicationName=Architect'
-      'Workstation=siunimep2015.database.windows.net'
+      'Workstation=DANIELPELISSARI\SQLEXPRESS'
       'MARS=yes'
       'DATABASE=ticket'
-      'User_Name=administrador'
-      'Password=SI@unimep-2015'
       'DriverID=MSSQL')
+    Connected = True
     LoginPrompt = False
     Left = 32
     Top = 8

@@ -31,12 +31,11 @@ uses UntDepartamento;
 procedure TFrmCadDepartamento.btn_salvarClick(Sender: TObject);
 begin
   inherited;
-  if FrmDepartamento.FDTable1.Active = False then
-  begin
-    FrmDepartamento.FDTable1.Open();
-  end;
+  FrmDepartamento.FDTable1.Close;
+  FrmDepartamento.FDTable1.Open();
 
   FrmDepartamento.FDTable1.Insert;
+
 
   Application.MessageBox('O registro foi incluído ou alterado com sucesso.', 'Informação', MB_OK+MB_ICONINFORMATION);
 

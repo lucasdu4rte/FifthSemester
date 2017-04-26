@@ -10,8 +10,6 @@ object DM: TDM
       'Workstation=siunimep2015.database.windows.net'
       'MARS=yes'
       'DATABASE=ticket'
-      'User_Name=administrador'
-      'Password=SI@unimep-2015'
       'DriverID=MSSQL')
     LoginPrompt = False
     Left = 32

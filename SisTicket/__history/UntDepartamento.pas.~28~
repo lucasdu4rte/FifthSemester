@@ -13,8 +13,6 @@ uses
 
 type
   TFrmDepartamento = class(TFrmPadraoSimples)
-    FDTable1id: TFDAutoIncField;
-    FDTable1descricao: TStringField;
     procedure ToolButton1Click(Sender: TObject);
     procedure btn_editarClick(Sender: TObject);
   private
@@ -51,6 +49,10 @@ end;
 procedure TFrmDepartamento.ToolButton1Click(Sender: TObject);
 begin
   inherited;
+  FDTable1.Close;
+  FDTable1.Open();
+  FDTable1.NextRecordSet;
+
   // Habilita Botoes
   FrmCadDepartamento.btn_salvar.Enabled:= true;
   FrmCadDepartamento.btn_cancelar.Enabled:= true;
@@ -58,8 +60,6 @@ begin
   FrmCadDepartamento.PnlFicha.Enabled:= true;
 
   FrmCadDepartamento.ShowModal;
-  FDTable1.Close;
-  FDTable1.Open();
 end;
 
 end.

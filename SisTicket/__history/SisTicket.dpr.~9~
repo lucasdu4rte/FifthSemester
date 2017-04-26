@@ -5,11 +5,11 @@ uses
   UntPrincipal in 'UntPrincipal.pas' {FrmMenuPrincipal},
   UntDM in 'UntDM.pas' {DM: TDataModule},
   UntPadrao1 in 'UntPadrao1.pas' {FrmPadrao1},
-  UntCadSimples in 'UntCadSimples.pas' {FrmCadSimples},
-  UntCadDepartamento in 'UntCadDepartamento.pas' {FrmCadDepartamento},
   UntFuncionarios in 'UntFuncionarios.pas' {FrmFuncionarios},
   UntPadraoSimples in 'UntPadraoSimples.pas' {FrmPadraoSimples},
   UntDepartamento in 'UntDepartamento.pas' {FrmDepartamento},
+  UntCadSimples in 'UntCadSimples.pas' {FrmCadSimples},
+  UntCadDepartamento in 'UntCadDepartamento.pas' {FrmCadDepartamento},
   UntChamado in 'UntChamado.pas' {Frmchamado};
 
 {$R *.res}

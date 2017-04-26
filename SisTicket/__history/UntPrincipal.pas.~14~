@@ -52,12 +52,8 @@ begin
 end;
 
 procedure TFrmMenuPrincipal.cad_FuncionarioExecute(Sender: TObject);
-var i:dword;
 begin
-//if InternetGetConnectedState(@i,0) then
   FrmFuncionarios.ShowModal;
-//  else
-//  showmessage('Conecte-se a Internet antes de utilizar o sistema de chamados.');
 end;
 
 procedure TFrmMenuPrincipal.FormActivate(Sender: TObject);

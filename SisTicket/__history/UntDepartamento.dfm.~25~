@@ -1863,19 +1863,7 @@ inherited FrmDepartamento: TFrmDepartamento
   end
   inherited FDTable1: TFDTable
     IndexFieldNames = 'id'
-    UpdateOptions.UpdateTableName = 'departamento'
-    TableName = 'departamento'
-    object FDTable1id: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object FDTable1descricao: TStringField
-      FieldName = 'descricao'
-      Origin = 'descricao'
-      Required = True
-      Size = 250
-    end
+    UpdateOptions.UpdateTableName = 'ticket.dbo.departamento'
+    TableName = 'ticket.dbo.departamento'
   end
 end

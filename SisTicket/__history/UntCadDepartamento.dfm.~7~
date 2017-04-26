@@ -7,18 +7,11 @@ inherited FrmCadDepartamento: TFrmCadDepartamento
   inherited Panel1: TPanel
     Caption = 'Cadastro Departamentos'
   end
-  inherited ToolBar1: TToolBar
-    inherited btn_salvar: TToolButton
-      OnClick = btn_salvarClick
-    end
-  end
   inherited StatusBar1: TStatusBar
     Top = 180
-    ExplicitTop = 180
   end
   inherited PnlFicha: TPanel
     Height = 82
-    ExplicitHeight = 82
     inherited DBEdit1: TDBEdit
       Left = 68
       DataField = 'descricao'

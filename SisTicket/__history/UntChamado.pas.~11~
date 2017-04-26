@@ -65,12 +65,10 @@ uses UntDM;
 procedure TFrmchamado.FormActivate(Sender: TObject);
 begin
   inherited;
-  FDTabela.Close;
-  FDTabela.Open();
-  FDQryFuncionarios.Close;
-  FDQryFuncionarios.open();
-  FDQryTipo.Close;
-  FDQryTipo.Open();
+      FDQryFuncionarios.Close;
+      FDQryFuncionarios.open();
+      FDQryTipo.Close;
+      FDQryTipo.Open();
 end;
 
 end.

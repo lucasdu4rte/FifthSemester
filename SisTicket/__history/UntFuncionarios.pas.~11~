@@ -45,9 +45,8 @@ type
     FDTabeladata_inc: TDateField;
     FDTabeladata_alt: TDateField;
     SpeedButton1: TSpeedButton;
-    Panel1: TPanel;
-    procedure FormActivate(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public

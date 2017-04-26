@@ -45,9 +45,8 @@ type
     FDTabeladata_inc: TDateField;
     FDTabeladata_alt: TDateField;
     SpeedButton1: TSpeedButton;
-    Panel1: TPanel;
-    procedure FormActivate(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,8 +65,6 @@ uses UntDM, UntDepartamento;
 procedure TFrmFuncionarios.FormActivate(Sender: TObject);
 begin
   inherited;
-  FDTabela.Close;
-  FDTabela.Open();
   FDQryDepto.Close;
   FDQryDepto.Open();
 end;
