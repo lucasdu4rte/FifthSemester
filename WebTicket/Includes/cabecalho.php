@@ -15,6 +15,11 @@
 		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 		<script src="bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+		<!--Inclusao do JQ -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!--Inclusao do Plugin JQ Mask-->
+		 <script src="js/jquery.maskedinput.min.js"></script>
+		 
 	</head>
 	<body>
 	<!-- Fixed navbar -->

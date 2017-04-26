@@ -1,9 +1,9 @@
 	<?php
-		include_once('Includes/cabecalho.php');
+		include_once('includes/cabecalho.php');
 	?>
 
 	
 	   
 	<?php
-		include_once('Includes/rodape.php');
+		include_once('includes/rodape.php');
 	?>

@@ -3,9 +3,9 @@
   //ao banco de dacos como constantes
   echo 'teste';
   define('DB_SERVIDOR','localhost'); 
-  define('DB_USUARIO','teste');
-  define('DB_SENHA','teste1');
-  define('DB_BANCO','loja');
+  define('DB_USUARIO','root');
+  define('DB_SENHA','');
+  define('DB_BANCO','webticket');
   
   $dbc = @mysqli_connect(DB_SERVIDOR,DB_USUARIO,DB_SENHA,DB_BANCO);
 
