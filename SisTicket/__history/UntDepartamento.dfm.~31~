@@ -37,9 +37,6 @@ inherited FrmDepartamento: TFrmDepartamento
   inherited ToolBar1: TToolBar
     Width = 460
     ExplicitWidth = 460
-    inherited btn_inserir: TToolButton
-      OnClick = btn_inserirClick
-    end
     inherited btn_editar: TToolButton
       OnClick = btn_editarClick
     end

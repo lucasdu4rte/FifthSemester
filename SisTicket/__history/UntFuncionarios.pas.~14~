@@ -46,7 +46,6 @@ type
     FDTabeladata_alt: TDateField;
     SpeedButton1: TSpeedButton;
     Panel1: TPanel;
-    GroupBox1: TGroupBox;
     procedure FormActivate(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
   private

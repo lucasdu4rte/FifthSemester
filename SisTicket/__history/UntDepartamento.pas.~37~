@@ -35,7 +35,7 @@ uses UntDM, UntCadDepartamento;
 procedure TFrmDepartamento.btn_editarClick(Sender: TObject);
 begin
   inherited;
-  FDTable1.Close;
+  { FDTable1.Close;
   FDTable1.Open();
 
   //Comando para a Iniciar edição da tabela
@@ -45,13 +45,13 @@ begin
   FrmCadDepartamento.btn_cancelar.Enabled:= true;
   FrmCadDepartamento.btn_sair.Enabled:= false;
   FrmCadDepartamento.PnlFicha.Enabled:= true;
-  FrmCadDepartamento.ShowModal;
+  FrmCadDepartamento.ShowModal;  }
 end;
 
 procedure TFrmDepartamento.btn_inserirClick(Sender: TObject);
 begin
   inherited;
-  // Habilita Botoes
+  {// Habilita Botoes
   FrmCadDepartamento.btn_salvar.Enabled:= true;
   FrmCadDepartamento.btn_cancelar.Enabled:= true;
   FrmCadDepartamento.btn_sair.Enabled:= false;
@@ -59,7 +59,7 @@ begin
 
   FrmCadDepartamento.ShowModal;
   FDTable1.Close;
-  FDTable1.Open();
+  FDTable1.Open();}
 end;
 
 end.

@@ -1,5 +1,7 @@
 CREATE DATABASE ticket
+
 use ticket
+
 CREATE TABLE status_chamado (
 	id int PRIMARY KEY identity(1,1),
 	descricao varchar(200) unique
@@ -12,7 +14,8 @@ CREATE TABLE tipo (
 
 CREATE TABLE departamento (
 	id int PRIMARY KEY identity(1,1),
-	descricao varchar(250) not null unique
+	descricao varchar(250) not null unique,
+	status char(1)
 );
 
 CREATE TABLE funcionario(
@@ -33,17 +36,18 @@ CREATE TABLE funcionario(
 
 CREATE TABLE chamado (
 	id int PRIMARY KEY identity(1,1),
-	id_responsavel int,
-	id_solicitante int not null,
-	data_inc date,
-	data_alt date,
-	data_prazo date,
-	descricao varchar(255),
-	observacao varchar(400),
-	id_status int,
-	id_tipo int,
+	id_responsavel int NULL,
+	id_solicitante int NULL,
+	data_inc date NULL,
+	data_alt date NULL,
+	data_prazo date NULL,
+	descricao varchar(250) NULL,
+	observacao varchar(1000) NULL,
+	id_status int NULL,
+	id_tipo int NULL,
+	status char(1),
 	CONSTRAINT fk_id_status_chamado FOREIGN KEY (id_status) REFERENCES status_chamado (id),
-	CONSTRAINT fk_id_tipo FOREIGN KEY (id_tipo) REFERENCES Tipo (id),
+	CONSTRAINT fk_id_tipo FOREIGN KEY (id_tipo) REFERENCES tipo (id),
 	CONSTRAINT fk_id_solicitante FOREIGN KEY (id_solicitante) REFERENCES funcionario(id),
 	CONSTRAINT fk_id_responsavel FOREIGN KEY (id_responsavel) REFERENCES funcionario(id)
 );

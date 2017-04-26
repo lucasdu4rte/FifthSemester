@@ -1,37 +1,79 @@
 inherited FrmFuncionarios: TFrmFuncionarios
   Caption = 'Funcionarios'
-  ClientHeight = 460
-  ClientWidth = 733
+  ClientHeight = 439
   Font.Color = clBlack
   OnActivate = FormActivate
-  ExplicitWidth = 739
-  ExplicitHeight = 489
+  ExplicitWidth = 740
+  ExplicitHeight = 468
   PixelsPerInch = 96
   TextHeight = 13
   inherited ToolBar1: TToolBar
     Top = 44
-    Width = 733
     ExplicitTop = 44
   end
   inherited StatusBar1: TStatusBar
-    Top = 441
-    Width = 733
-    ExplicitTop = 420
+    Top = 420
+    ExplicitTop = 487
   end
   inherited PanelEntrada: TPanel
     Top = 93
-    Width = 733
-    ExplicitTop = 93
     inherited CheckHabilita: TDBCheckBox
       DataField = 'status'
     end
   end
   inherited PnlFicha: TPanel
     Top = 123
-    Width = 733
-    Height = 318
-    ExplicitTop = 123
-    ExplicitHeight = 297
+    Height = 297
+    ExplicitHeight = 408
+    object Label2: TLabel
+      Left = 137
+      Top = 64
+      Width = 27
+      Height = 13
+      Caption = 'Nome'
+    end
+    object Label3: TLabel
+      Left = 68
+      Top = 104
+      Width = 96
+      Height = 13
+      Caption = 'Data de Nascimento'
+    end
+    object Email: TLabel
+      Left = 140
+      Top = 144
+      Width = 24
+      Height = 13
+      Caption = 'Email'
+    end
+    object Telefone: TLabel
+      Left = 122
+      Top = 184
+      Width = 42
+      Height = 13
+      Caption = 'Telefone'
+    end
+    object Label6: TLabel
+      Left = 131
+      Top = 224
+      Width = 33
+      Height = 13
+      Caption = 'Celular'
+    end
+    object Label7: TLabel
+      Left = 392
+      Top = 184
+      Width = 29
+      Height = 13
+      Caption = 'Ramal'
+    end
+    object Label8: TLabel
+      Left = 95
+      Top = 264
+      Width = 69
+      Height = 13
+      Caption = 'Departamento'
+    end
     object Label4: TLabel
       Left = 24
       Top = 16
@@ -46,148 +88,78 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Height = 13
       Caption = 'Data Altera'#231#227'o'
     end
-    object GroupBox1: TGroupBox
-      Left = 78
-      Top = 40
-      Width = 563
-      Height = 257
-      Caption = 'Dados Pessoais'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -12
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
+    object SpeedButton1: TSpeedButton
+      Left = 376
+      Top = 259
+      Width = 23
+      Height = 22
+      OnClick = SpeedButton1Click
+    end
+    object DBEdit1: TDBEdit
+      Left = 191
+      Top = 61
+      Width = 386
+      Height = 21
+      DataField = 'nome'
+      DataSource = DataSource1
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 192
+      Top = 101
+      Width = 121
+      Height = 21
+      DataField = 'data_nasc'
+      DataSource = DataSource1
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 192
+      Top = 141
+      Width = 385
+      Height = 21
+      DataField = 'email'
+      DataSource = DataSource1
       TabOrder = 2
-      object Email: TLabel
-        Left = 103
-        Top = 104
-        Width = 27
-        Height = 14
-        Caption = 'Email'
-      end
-      object Label2: TLabel
-        Left = 98
-        Top = 24
-        Width = 32
-        Height = 14
-        Caption = 'Nome'
-      end
-      object Label3: TLabel
-        Left = 20
-        Top = 64
-        Width = 110
-        Height = 14
-        Caption = 'Data de Nascimento'
-      end
-      object Label6: TLabel
-        Left = 95
-        Top = 184
-        Width = 35
-        Height = 14
-        Caption = 'Celular'
-      end
-      object Label7: TLabel
-        Left = 339
-        Top = 144
-        Width = 31
-        Height = 14
-        Caption = 'Ramal'
-      end
-      object Label8: TLabel
-        Left = 50
-        Top = 223
-        Width = 79
-        Height = 14
-        Caption = 'Departamento'
-      end
-      object SpeedButton1: TSpeedButton
-        Left = 322
-        Top = 219
-        Width = 23
-        Height = 22
-        Caption = '+'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clGreen
-        Font.Height = -12
-        Font.Name = 'Comic Sans MS'
-        Font.Style = [fsBold]
-        ParentFont = False
-        OnClick = SpeedButton1Click
-      end
-      object Telefone: TLabel
-        Left = 81
-        Top = 144
-        Width = 49
-        Height = 14
-        Caption = 'Telefone'
-      end
-      object DBEdit1: TDBEdit
-        Left = 138
-        Top = 21
-        Width = 386
-        Height = 22
-        DataField = 'nome'
-        DataSource = DataSource1
-        TabOrder = 0
-      end
-      object DBEdit2: TDBEdit
-        Left = 138
-        Top = 61
-        Width = 121
-        Height = 22
-        DataField = 'data_nasc'
-        DataSource = DataSource1
-        TabOrder = 1
-      end
-      object DBEdit3: TDBEdit
-        Left = 138
-        Top = 101
-        Width = 385
-        Height = 22
-        DataField = 'email'
-        DataSource = DataSource1
-        TabOrder = 2
-      end
-      object DBEdit4: TDBEdit
-        Left = 138
-        Top = 141
-        Width = 177
-        Height = 22
-        DataField = 'telefone'
-        DataSource = DataSource1
-        TabOrder = 3
-      end
-      object DBEdit5: TDBEdit
-        Left = 395
-        Top = 141
-        Width = 129
-        Height = 22
-        DataField = 'ramal'
-        DataSource = DataSource1
-        TabOrder = 4
-      end
-      object DBEdit6: TDBEdit
-        Left = 138
-        Top = 181
-        Width = 177
-        Height = 22
-        DataField = 'celular'
-        DataSource = DataSource1
-        TabOrder = 5
-      end
-      object DBLookupComboBox1: TDBLookupComboBox
-        Left = 138
-        Top = 219
-        Width = 178
-        Height = 22
-        DataField = 'id_departamento'
-        DataSource = DataSource1
-        KeyField = 'id'
-        ListField = 'descricao'
-        ListSource = DSDepto
-        TabOrder = 6
-      end
+    end
+    object DBEdit4: TDBEdit
+      Left = 192
+      Top = 181
+      Width = 177
+      Height = 21
+      DataField = 'telefone'
+      DataSource = DataSource1
+      TabOrder = 3
+    end
+    object DBEdit5: TDBEdit
+      Left = 448
+      Top = 181
+      Width = 129
+      Height = 21
+      DataField = 'ramal'
+      DataSource = DataSource1
+      TabOrder = 4
+    end
+    object DBEdit6: TDBEdit
+      Left = 191
+      Top = 221
+      Width = 177
+      Height = 21
+      DataField = 'celular'
+      DataSource = DataSource1
+      TabOrder = 5
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 192
+      Top = 260
+      Width = 178
+      Height = 21
+      DataField = 'id_departamento'
+      DataSource = DataSource1
+      KeyField = 'id'
+      ListField = 'descricao'
+      ListSource = DSDepto
+      TabOrder = 6
     end
     object DBEdit7: TDBEdit
       Left = 353
@@ -196,7 +168,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Height = 21
       DataField = 'data_alt'
       DataSource = DataSource1
-      TabOrder = 0
+      TabOrder = 7
     end
     object DBEdit8: TDBEdit
       Left = 96
@@ -205,13 +177,13 @@ inherited FrmFuncionarios: TFrmFuncionarios
       Height = 21
       DataField = 'data_inc'
       DataSource = DataSource1
-      TabOrder = 1
+      TabOrder = 8
     end
   end
   object Panel1: TPanel [4]
     Left = 0
     Top = 0
-    Width = 733
+    Width = 734
     Height = 44
     Align = alTop
     Caption = 'Cadastro de Funcionarios'
@@ -224,13 +196,14 @@ inherited FrmFuncionarios: TFrmFuncionarios
     ParentBackground = False
     ParentFont = False
     TabOrder = 4
-    ExplicitWidth = 734
+    ExplicitLeft = 53
+    ExplicitWidth = 185
   end
   inherited ImageList1: TImageList
     Left = 32
     Top = 424
     Bitmap = {
-      494C01010D001800300018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1429,7 +1402,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 72
     Top = 424
     Bitmap = {
-      494C01010D001800300018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2628,7 +2601,7 @@ inherited FrmFuncionarios: TFrmFuncionarios
     Left = 128
     Top = 425
     Bitmap = {
-      494C01010D001800300018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B
