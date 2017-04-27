@@ -39,7 +39,7 @@ CREATE TABLE chamado (
 	id_status int,
 	id_tipo int,
 	CONSTRAINT fk_id_status_chamado FOREIGN KEY (id_status) REFERENCES status_chamado (id),
-	CONSTRAINT fk_id_tipo FOREIGN KEY (id_tipo) REFERENCES Tipo (id),
+	CONSTRAINT fk_id_tipo FOREIGN KEY (id_tipo) REFERENCES tipo (id),
 	CONSTRAINT fk_id_solicitante FOREIGN KEY (id_solicitante) REFERENCES funcionario(id),
 	CONSTRAINT fk_id_responsavel FOREIGN KEY (id_responsavel) REFERENCES funcionario(id)
 );

@@ -12,7 +12,9 @@ object DM: TDM
       'DATABASE=ticket'
       'User_Name=administrador'
       'Password=SI@unimep-2015'
-      'DriverID=MSSQL')
+      'DriverID=MSSQL'
+      'POOL_ExpireTimeout=180000'
+      'POOL_CleanupTimeout=40000')
     LoginPrompt = False
     Left = 32
     Top = 8
