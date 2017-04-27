@@ -10,8 +10,7 @@ uses
   UntFuncionarios in 'UntFuncionarios.pas' {FrmFuncionarios},
   UntPadraoSimples in 'UntPadraoSimples.pas' {FrmPadraoSimples},
   UntDepartamento in 'UntDepartamento.pas' {FrmDepartamento},
-  UntChamado in 'UntChamado.pas' {Frmchamado},
-  UntListaChamados in 'UntListaChamados.pas' {FrmListaChamados};
+  UntChamado in 'UntChamado.pas' {Frmchamado};
 
 {$R *.res}
 
@@ -27,6 +26,5 @@ begin
   Application.CreateForm(TFrmCadSimples, FrmCadSimples);
   Application.CreateForm(TFrmCadDepartamento, FrmCadDepartamento);
   Application.CreateForm(TFrmchamado, Frmchamado);
-  Application.CreateForm(TFrmListaChamados, FrmListaChamados);
   Application.Run;
 end.
