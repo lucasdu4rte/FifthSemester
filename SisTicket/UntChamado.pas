@@ -35,17 +35,6 @@ type
     DSTipo: TDataSource;
     DBMemo2: TDBMemo;
     DBEdit6: TDBEdit;
-    FDTabelaid: TFDAutoIncField;
-    FDTabelaid_responsavel: TIntegerField;
-    FDTabelaid_solicitante: TIntegerField;
-    FDTabeladata_alt: TDateField;
-    FDTabeladata_prazo: TDateField;
-    FDTabelaid_status: TIntegerField;
-    FDTabelaid_tipo: TIntegerField;
-    FDTabelastatus: TStringField;
-    FDTabeladata_inc: TDateField;
-    FDTabeladescricao: TWideStringField;
-    FDTabelaobservacao: TWideStringField;
     procedure FormActivate(Sender: TObject);
   private
     { Private declarations }

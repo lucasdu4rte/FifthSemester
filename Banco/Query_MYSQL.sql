@@ -51,3 +51,4 @@ CREATE TABLE funcionarioxchamado (
 	CONSTRAINT fk_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionario(id),
 	CONSTRAINT fk_id_chamado FOREIGN KEY (id_chamado) REFERENCES chamado (id)
 )
+
