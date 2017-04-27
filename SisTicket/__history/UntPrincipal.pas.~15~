@@ -19,7 +19,6 @@ type
     ActionToolBar1: TActionToolBar;
     StatusBar1: TStatusBar;
     Timer1: TTimer;
-    Action2: TAction;
     procedure Action1Execute(Sender: TObject);
     procedure cad_FuncionarioExecute(Sender: TObject);
     procedure cad_ChamadoExecute(Sender: TObject);
@@ -27,7 +26,6 @@ type
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Timer1Timer(Sender: TObject);
-    procedure Action2Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,16 +39,11 @@ implementation
 
 {$R *.dfm}
 
-uses UntPadrao1, UntFuncionarios, UntChamado, UntListaChamados;
+uses UntPadrao1, UntFuncionarios, UntChamado;
 
 procedure TFrmMenuPrincipal.Action1Execute(Sender: TObject);
 begin
   Close;
-end;
-
-procedure TFrmMenuPrincipal.Action2Execute(Sender: TObject);
-begin
-  frmListachamados.showmodal;
 end;
 
 procedure TFrmMenuPrincipal.cad_ChamadoExecute(Sender: TObject);

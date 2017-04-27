@@ -31,10 +31,11 @@ type
     Label9: TLabel;
     DBLookupComboBox3: TDBLookupComboBox;
     Label10: TLabel;
-    DBMemo1: TDBMemo;
-    DBMemo2: TDBMemo;
     FDQryTipo: TFDQuery;
     DSTipo: TDataSource;
+    DBMemo2: TDBMemo;
+    DBEdit6: TDBEdit;
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,5 +50,16 @@ implementation
 {$R *.dfm}
 
 uses UntDM;
+
+procedure TFrmchamado.FormActivate(Sender: TObject);
+begin
+  inherited;
+  FDTabela.Close;
+  FDTabela.Open();
+  FDQryFuncionarios.Close;
+  FDQryFuncionarios.open();
+  FDQryTipo.Close;
+  FDQryTipo.Open();
+end;
 
 end.

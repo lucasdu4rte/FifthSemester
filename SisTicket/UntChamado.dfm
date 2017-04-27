@@ -2,14 +2,14 @@ inherited Frmchamado: TFrmchamado
   Caption = 'FrmChamado'
   ClientHeight = 585
   OnActivate = FormActivate
-  ExplicitTop = -175
+  ExplicitTop = -182
   ExplicitWidth = 740
   ExplicitHeight = 614
   PixelsPerInch = 96
   TextHeight = 13
   inherited StatusBar1: TStatusBar
     Top = 566
-    ExplicitTop = 379
+    ExplicitTop = 566
   end
   inherited PanelEntrada: TPanel
     inherited Label1: TLabel
@@ -32,7 +32,7 @@ inherited Frmchamado: TFrmchamado
   end
   inherited PnlFicha: TPanel
     Height = 487
-    ExplicitHeight = 300
+    ExplicitHeight = 487
     object Label2: TLabel
       Left = 42
       Top = 22
@@ -193,7 +193,7 @@ inherited Frmchamado: TFrmchamado
     Left = 8
     Top = 536
     Bitmap = {
-      494C01010D001800380018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018003C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000009A66
@@ -1392,7 +1392,7 @@ inherited Frmchamado: TFrmchamado
     Left = 48
     Top = 536
     Bitmap = {
-      494C01010D001800380018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018003C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000008080
@@ -2591,7 +2591,7 @@ inherited Frmchamado: TFrmchamado
     Left = 104
     Top = 537
     Bitmap = {
-      494C01010D001800380018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010D0018003C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000006000000001002000000000000090
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000824B
@@ -3788,66 +3788,13 @@ inherited Frmchamado: TFrmchamado
   end
   inherited FDTabela: TFDTable
     IndexFieldNames = 'id'
-    UpdateOptions.UpdateTableName = 'chamado'
-    TableName = 'chamado'
+    UpdateOptions.UpdateTableName = 'ticket.dbo.chamado'
+    TableName = 'ticket.dbo.chamado'
     Left = 168
     Top = 536
-    object FDTabelaid: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object FDTabelaid_responsavel: TIntegerField
-      FieldName = 'id_responsavel'
-      Origin = 'id_responsavel'
-    end
-    object FDTabelaid_solicitante: TIntegerField
-      FieldName = 'id_solicitante'
-      Origin = 'id_solicitante'
-      Required = True
-    end
-    object FDTabeladata_alt: TDateField
-      FieldName = 'data_alt'
-      Origin = 'data_alt'
-    end
-    object FDTabeladata_prazo: TDateField
-      FieldName = 'data_prazo'
-      Origin = 'data_prazo'
-    end
-    object FDTabelaid_status: TIntegerField
-      FieldName = 'id_status'
-      Origin = 'id_status'
-    end
-    object FDTabelaid_tipo: TIntegerField
-      FieldName = 'id_tipo'
-      Origin = 'id_tipo'
-    end
-    object FDTabelastatus: TStringField
-      FieldName = 'status'
-      Origin = 'status'
-      FixedChar = True
-      Size = 1
-    end
-    object FDTabeladata_inc: TDateField
-      FieldName = 'data_inc'
-      Origin = 'data_inc'
-    end
-    object FDTabeladescricao: TWideStringField
-      FieldName = 'descricao'
-      Origin = 'descricao'
-      FixedChar = True
-      Size = 1200
-    end
-    object FDTabelaobservacao: TWideStringField
-      FieldName = 'observacao'
-      Origin = 'observacao'
-      FixedChar = True
-      Size = 1000
-    end
   end
   inherited DataSource1: TDataSource
-    Left = 224
+    Left = 232
     Top = 536
   end
   object DSFuncionarios: TDataSource
@@ -3860,7 +3807,7 @@ inherited Frmchamado: TFrmchamado
     SQL.Strings = (
       'SELECT id,nome FROM funcionario ORDER BY nome')
     Left = 296
-    Top = 535
+    Top = 519
   end
   object FDQryTipo: TFDQuery
     Connection = DM.FDConnection1

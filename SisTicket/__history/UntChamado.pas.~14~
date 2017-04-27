@@ -31,21 +31,22 @@ type
     Label9: TLabel;
     DBLookupComboBox3: TDBLookupComboBox;
     Label10: TLabel;
-    DBMemo1: TDBMemo;
-    DBMemo2: TDBMemo;
     FDQryTipo: TFDQuery;
     DSTipo: TDataSource;
+    DBMemo2: TDBMemo;
+    DBEdit6: TDBEdit;
     FDTabelaid: TFDAutoIncField;
     FDTabelaid_responsavel: TIntegerField;
     FDTabelaid_solicitante: TIntegerField;
-    FDTabeladata_inc: TDateField;
     FDTabeladata_alt: TDateField;
     FDTabeladata_prazo: TDateField;
-    FDTabeladescricao: TStringField;
-    FDTabelaobservacao: TStringField;
     FDTabelaid_status: TIntegerField;
     FDTabelaid_tipo: TIntegerField;
     FDTabelastatus: TStringField;
+    FDTabeladata_inc: TDateField;
+    FDTabeladescricao: TWideStringField;
+    FDTabelaobservacao: TWideStringField;
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,5 +61,16 @@ implementation
 {$R *.dfm}
 
 uses UntDM;
+
+procedure TFrmchamado.FormActivate(Sender: TObject);
+begin
+  inherited;
+  FDTabela.Close;
+  FDTabela.Open();
+  FDQryFuncionarios.Close;
+  FDQryFuncionarios.open();
+  FDQryTipo.Close;
+  FDQryTipo.Open();
+end;
 
 end.
