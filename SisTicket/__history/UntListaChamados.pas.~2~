@@ -26,25 +26,7 @@ type
     FDTable1id_tipo: TIntegerField;
     FDTable1status: TStringField;
     FDQryFuncionarios: TFDQuery;
-    DSFuncionarios: TDataSource;
-    FDfuncionario: TFDTable;
-    DSFuncioario: TDataSource;
-    FDfuncionarioid: TFDAutoIncField;
-    FDfuncionariodata_inc: TDateField;
-    FDfuncionariodata_alt: TDateField;
-    FDfuncionarionome: TStringField;
-    FDfuncionariodata_nasc: TStringField;
-    FDfuncionarioemail: TStringField;
-    FDfuncionariotelefone: TStringField;
-    FDfuncionariocelular: TStringField;
-    FDfuncionarioramal: TStringField;
-    FDfuncionarioid_departamento: TIntegerField;
-    FDfuncionariostatus: TStringField;
-    FDTable1nome_solicitante: TStringField;
-    FDQryDpto: TFDQuery;
-    DSDpto: TDataSource;
-    FDTable1dpto_solicitante: TStringField;
-    Label2: TLabel;
+    DSFuncionario: TDataSource;
   private
     { Private declarations }
   public
@@ -58,4 +40,6 @@ implementation
 
 {$R *.dfm}
 
-uses UntDM;end.
+uses UntDM;
+
+end.

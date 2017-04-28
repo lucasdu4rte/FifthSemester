@@ -1,33 +1,20 @@
 inherited FrmListaChamados: TFrmListaChamados
-  Caption = 'Sistema de chamados de T.I - Todos os chamados cadastrados'
-  ClientHeight = 372
-  ClientWidth = 749
-  ExplicitWidth = 755
-  ExplicitHeight = 400
+  Caption = 'FrmListaChamados'
+  ClientHeight = 313
+  ClientWidth = 520
+  ExplicitWidth = 526
+  ExplicitHeight = 342
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
-    Width = 749
-    ExplicitWidth = 749
-    object Label2: TLabel
-      Left = 246
-      Top = 17
-      Width = 217
-      Height = 18
-      Caption = 'Todos chamados cadastrados'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -15
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
+    Width = 520
   end
   inherited DBGrid1: TDBGrid
     Top = 139
-    Width = 749
-    Height = 233
+    Width = 520
+    Height = 174
     Align = alClient
+    DataSource = DSFuncionario
     Columns = <
       item
         Expanded = False
@@ -38,39 +25,17 @@ inherited FrmListaChamados: TFrmListaChamados
       end
       item
         Expanded = False
-        FieldName = 'observacao'
-        Title.Caption = 'Motivo do chamado'
-        Width = 294
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'id_responsavel'
-        Title.Caption = 'Cod-Solicitante'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'nome_solicitante'
-        Title.Caption = 'Nome do Solicitante'
-        Width = 110
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'dpto_solicitante'
-        Title.Caption = 'Departamento'
-        Width = 92
+        FieldName = 'nome'
+        Title.Caption = 'Nome do solicitante'
+        Width = 102
         Visible = True
       end>
   end
   inherited ToolBar1: TToolBar
-    Width = 749
-    ExplicitWidth = 749
+    Width = 520
   end
   inherited Panel2: TPanel
-    Width = 749
-    ExplicitWidth = 749
+    Width = 520
     object SpeedButton1: TSpeedButton [1]
       Left = 327
       Top = 11
@@ -132,7 +97,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList1: TImageList
     Bitmap = {
-      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -735,7 +700,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList2: TImageList
     Bitmap = {
-      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1338,7 +1303,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList3: TImageList
     Bitmap = {
-      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800200018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1993,114 +1958,17 @@ inherited FrmListaChamados: TFrmListaChamados
       FixedChar = True
       Size = 1
     end
-    object FDTable1nome_solicitante: TStringField
-      FieldKind = fkLookup
-      FieldName = 'nome_solicitante'
-      LookupDataSet = FDQryFuncionarios
-      LookupKeyFields = 'id'
-      LookupResultField = 'nome'
-      KeyFields = 'id_solicitante'
-      Lookup = True
-    end
-    object FDTable1dpto_solicitante: TStringField
-      FieldKind = fkLookup
-      FieldName = 'dpto_solicitante'
-      LookupDataSet = FDQryDpto
-      LookupKeyFields = 'id'
-      LookupResultField = 'descricao'
-      KeyFields = 'id_solicitante'
-      Lookup = True
-    end
   end
   object FDQryFuncionarios: TFDQuery
     Connection = DM.FDConnection1
     SQL.Strings = (
-      'SELECT id,nome FROM funcionario ORDER BY nome')
-    Left = 416
-    Top = 232
+      'select * from funcionario')
+    Left = 320
+    Top = 176
   end
-  object DSFuncionarios: TDataSource
+  object DSFuncionario: TDataSource
     DataSet = FDQryFuncionarios
-    Left = 496
-    Top = 224
-  end
-  object FDfuncionario: TFDTable
-    IndexFieldNames = 'id'
-    Connection = DM.FDConnection1
-    UpdateOptions.UpdateTableName = 'ticket.dbo.funcionario'
-    TableName = 'ticket.dbo.funcionario'
-    Left = 416
-    Top = 304
-    object FDfuncionarioid: TFDAutoIncField
-      FieldName = 'id'
-      Origin = 'id'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object FDfuncionariodata_inc: TDateField
-      FieldName = 'data_inc'
-      Origin = 'data_inc'
-    end
-    object FDfuncionariodata_alt: TDateField
-      FieldName = 'data_alt'
-      Origin = 'data_alt'
-    end
-    object FDfuncionarionome: TStringField
-      FieldName = 'nome'
-      Origin = 'nome'
-      Size = 100
-    end
-    object FDfuncionariodata_nasc: TStringField
-      FieldName = 'data_nasc'
-      Origin = 'data_nasc'
-      Size = 50
-    end
-    object FDfuncionarioemail: TStringField
-      FieldName = 'email'
-      Origin = 'email'
-      Size = 50
-    end
-    object FDfuncionariotelefone: TStringField
-      FieldName = 'telefone'
-      Origin = 'telefone'
-      Size = 50
-    end
-    object FDfuncionariocelular: TStringField
-      FieldName = 'celular'
-      Origin = 'celular'
-      Size = 50
-    end
-    object FDfuncionarioramal: TStringField
-      FieldName = 'ramal'
-      Origin = 'ramal'
-      Size = 50
-    end
-    object FDfuncionarioid_departamento: TIntegerField
-      FieldName = 'id_departamento'
-      Origin = 'id_departamento'
-    end
-    object FDfuncionariostatus: TStringField
-      FieldName = 'status'
-      Origin = 'status'
-      FixedChar = True
-      Size = 1
-    end
-  end
-  object DSFuncioario: TDataSource
-    DataSet = FDTable1
-    Left = 504
-    Top = 304
-  end
-  object FDQryDpto: TFDQuery
-    Connection = DM.FDConnection1
-    SQL.Strings = (
-      'SELECT * FROM departamento ORDER BY descricao')
-    Left = 640
-    Top = 248
-  end
-  object DSDpto: TDataSource
-    DataSet = FDQryDpto
-    Left = 648
-    Top = 304
+    Left = 400
+    Top = 176
   end
 end

@@ -40,11 +40,6 @@ type
     FDfuncionarioramal: TStringField;
     FDfuncionarioid_departamento: TIntegerField;
     FDfuncionariostatus: TStringField;
-    FDTable1nome_solicitante: TStringField;
-    FDQryDpto: TFDQuery;
-    DSDpto: TDataSource;
-    FDTable1dpto_solicitante: TStringField;
-    Label2: TLabel;
   private
     { Private declarations }
   public
