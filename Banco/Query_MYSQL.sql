@@ -1,22 +1,22 @@
 CREATE DATABASE ticket
 
 CREATE TABLE status_chamado (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	descricao varchar(200)
 );
 
 CREATE TABLE tipo (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	descricao varchar(200)
 );
 
 CREATE TABLE departamento (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	descricao varchar(250) not null
 );
 
 CREATE TABLE funcionario(
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	nome varchar(100),
 	data_nasc varchar(50),
 	email varchar(50),
@@ -28,7 +28,7 @@ CREATE TABLE funcionario(
 );
 
 CREATE TABLE chamado (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	id_responsavel int,
 	id_solicitante int not null,
 	data_inc date,
@@ -45,10 +45,9 @@ CREATE TABLE chamado (
 );
 
 CREATE TABLE funcionarioxchamado (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	id_funcionario int,
 	id_chamado int,
 	CONSTRAINT fk_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionario(id),
 	CONSTRAINT fk_id_chamado FOREIGN KEY (id_chamado) REFERENCES chamado (id)
 )
-
