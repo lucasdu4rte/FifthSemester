@@ -11,8 +11,7 @@ uses
   UntPadraoSimples in 'UntPadraoSimples.pas' {FrmPadraoSimples},
   UntDepartamento in 'UntDepartamento.pas' {FrmDepartamento},
   UntChamado in 'UntChamado.pas' {Frmchamado},
-  UntListaChamados in 'UntListaChamados.pas' {FrmListaChamados},
-  UntAtendeChamado in 'UntAtendeChamado.pas' {FrmAtendeChamado};
+  UntListaChamados in 'UntListaChamados.pas' {FrmListaChamados};
 
 {$R *.res}
 
@@ -29,6 +28,5 @@ begin
   Application.CreateForm(TFrmCadDepartamento, FrmCadDepartamento);
   Application.CreateForm(TFrmchamado, Frmchamado);
   Application.CreateForm(TFrmListaChamados, FrmListaChamados);
-  Application.CreateForm(TFrmAtendeChamado, FrmAtendeChamado);
   Application.Run;
 end.
