@@ -52,7 +52,6 @@ type
     DSTipo: TDataSource;
     FDTable1Motivo_chamado: TStringField;
     ToolButton1: TToolButton;
-    procedure ToolButton1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,12 +65,4 @@ implementation
 
 {$R *.dfm}
 
-uses UntDM, UntAtendeChamado ;
-
-procedure TFrmListaChamados.ToolButton1Click(Sender: TObject);
-begin
-  inherited;
-  frmatendechamado.showmodal;
-end;
-
-end.
+uses UntDM;end.

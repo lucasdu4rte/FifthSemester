@@ -10,8 +10,8 @@ inherited FrmListaChamados: TFrmListaChamados
     Width = 744
     ExplicitWidth = 744
     object Label2: TLabel
-      Left = 268
-      Top = 16
+      Left = 246
+      Top = 17
       Width = 217
       Height = 18
       Caption = 'Todos chamados cadastrados'

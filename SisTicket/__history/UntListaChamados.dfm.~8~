@@ -10,8 +10,8 @@ inherited FrmListaChamados: TFrmListaChamados
     Width = 744
     ExplicitWidth = 744
     object Label2: TLabel
-      Left = 268
-      Top = 16
+      Left = 246
+      Top = 17
       Width = 217
       Height = 18
       Caption = 'Todos chamados cadastrados'
@@ -83,7 +83,6 @@ inherited FrmListaChamados: TFrmListaChamados
       Hint = 'Atender um chamado'
       Caption = 'ToolButton1'
       ImageIndex = 7
-      OnClick = ToolButton1Click
     end
     inherited btn_editar: TToolButton
       Left = 86

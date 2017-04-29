@@ -66,9 +66,7 @@ implementation
 
 {$R *.dfm}
 
-uses UntDM, UntAtendeChamado ;
-
-procedure TFrmListaChamados.ToolButton1Click(Sender: TObject);
+uses UntDM, Unit2;procedure TFrmListaChamados.ToolButton1Click(Sender: TObject);
 begin
   inherited;
   frmatendechamado.showmodal;
