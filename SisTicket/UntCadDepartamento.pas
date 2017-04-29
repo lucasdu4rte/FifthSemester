@@ -8,10 +8,11 @@ uses
   FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
   FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
   Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask,
-  Vcl.DBCtrls, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls;
+  Vcl.DBCtrls, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
 
 type
   TFrmCadDepartamento = class(TFrmCadSimples)
+    Image1: TImage;
     procedure btn_salvarClick(Sender: TObject);
   private
     { Private declarations }
