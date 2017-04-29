@@ -45,12 +45,6 @@ type
     DSDpto: TDataSource;
     FDTable1dpto_solicitante: TStringField;
     Label2: TLabel;
-    FDQryStatus_chamado: TFDQuery;
-    DSStatus_chamado: TDataSource;
-    FDTable1status_chamado: TStringField;
-    FDQryTipo: TFDQuery;
-    DSTipo: TDataSource;
-    FDTable1Motivo_chamado: TStringField;
   private
     { Private declarations }
   public
