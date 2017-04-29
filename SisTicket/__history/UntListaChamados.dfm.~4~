@@ -1,14 +1,13 @@
 inherited FrmListaChamados: TFrmListaChamados
   Caption = 'Sistema de chamados de T.I - Todos os chamados cadastrados'
   ClientHeight = 372
-  ClientWidth = 857
-  ExplicitLeft = -59
-  ExplicitWidth = 863
-  ExplicitHeight = 401
+  ClientWidth = 749
+  ExplicitWidth = 755
+  ExplicitHeight = 400
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
-    Width = 857
+    Width = 749
     ExplicitWidth = 749
     object Label2: TLabel
       Left = 246
@@ -26,59 +25,51 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited DBGrid1: TDBGrid
     Top = 139
-    Width = 857
+    Width = 749
     Height = 233
     Align = alClient
     Columns = <
       item
         Expanded = False
         FieldName = 'id'
-        Title.Caption = 'C'#243'd-chamado'
-        Width = 80
+        Title.Caption = 'C'#243'digo do chamado'
+        Width = 111
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Motivo_chamado'
+        FieldName = 'observacao'
         Title.Caption = 'Motivo do chamado'
-        Width = 136
+        Width = 294
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'id_responsavel'
+        Title.Caption = 'Cod-Solicitante'
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'nome_solicitante'
-        Title.Caption = 'Solicitante'
-        Width = 108
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'descricao'
-        Title.Caption = 'Descri'#231#227'o'
-        Width = 123
+        Title.Caption = 'Nome do Solicitante'
+        Width = 110
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'dpto_solicitante'
         Title.Caption = 'Departamento'
-        Width = 115
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'status_chamado'
-        Title.Caption = 'Status do chamado'
-        Width = 156
+        Width = 92
         Visible = True
       end>
   end
   inherited ToolBar1: TToolBar
-    Width = 857
+    Width = 749
     ExplicitWidth = 749
   end
   inherited Panel2: TPanel
-    Width = 857
+    Width = 749
     ExplicitWidth = 749
     object SpeedButton1: TSpeedButton [1]
       Left = 327
@@ -141,7 +132,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList1: TImageList
     Bitmap = {
-      494C0101070018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -744,7 +735,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList2: TImageList
     Bitmap = {
-      494C0101070018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1347,7 +1338,7 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ImageList3: TImageList
     Bitmap = {
-      494C0101070018002C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010107001800280018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -2020,24 +2011,6 @@ inherited FrmListaChamados: TFrmListaChamados
       KeyFields = 'id_solicitante'
       Lookup = True
     end
-    object FDTable1status_chamado: TStringField
-      FieldKind = fkLookup
-      FieldName = 'status_chamado'
-      LookupDataSet = FDQryStatus_chamado
-      LookupKeyFields = 'id'
-      LookupResultField = 'descricao'
-      KeyFields = 'id'
-      Lookup = True
-    end
-    object FDTable1Motivo_chamado: TStringField
-      FieldKind = fkLookup
-      FieldName = 'Motivo_chamado'
-      LookupDataSet = FDQryTipo
-      LookupKeyFields = 'id'
-      LookupResultField = 'descricao'
-      KeyFields = 'id_tipo'
-      Lookup = True
-    end
   end
   object FDQryFuncionarios: TFDQuery
     Connection = DM.FDConnection1
@@ -2048,8 +2021,8 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   object DSFuncionarios: TDataSource
     DataSet = FDQryFuncionarios
-    Left = 504
-    Top = 232
+    Left = 496
+    Top = 224
   end
   object FDfuncionario: TFDTable
     IndexFieldNames = 'id'
@@ -2122,35 +2095,12 @@ inherited FrmListaChamados: TFrmListaChamados
     Connection = DM.FDConnection1
     SQL.Strings = (
       'SELECT * FROM departamento ORDER BY descricao')
-    Left = 608
-    Top = 232
+    Left = 640
+    Top = 248
   end
   object DSDpto: TDataSource
     DataSet = FDQryDpto
-    Left = 608
-    Top = 296
-  end
-  object FDQryStatus_chamado: TFDQuery
-    Connection = DM.FDConnection1
-    SQL.Strings = (
-      'select * from status_chamado')
-    Left = 704
-    Top = 240
-  end
-  object DSStatus_chamado: TDataSource
-    Left = 704
-    Top = 296
-  end
-  object FDQryTipo: TFDQuery
-    Connection = DM.FDConnection1
-    SQL.Strings = (
-      'select * from tipo')
-    Left = 800
-    Top = 240
-  end
-  object DSTipo: TDataSource
-    DataSet = FDQryTipo
-    Left = 800
+    Left = 648
     Top = 304
   end
 end
