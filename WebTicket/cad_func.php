@@ -1,4 +1,5 @@
 <?php
+        include_once('includes/conexao.php');
         include_once('includes/cabecalho.php');
 ?>
 
@@ -34,7 +35,19 @@
         <div class="row">
             <div class="form group col-md-4">
                 <label>Departamento</label>
-                <input type="text" name="dpto_func" id="dpto_func" maxlength="40" class="form-control" placeholder="Digite odepartamento..." value="1"/>	
+                <select class="form-control" name="dpto_func" id="dpto_func">
+                <?php
+                $sql = "SELECT * FROM departamento";
+
+                $result = mysqli_query($dbc, $sql);
+                echo '<option value="" selected>Selecione...</option>';
+                foreach ($result as $row) {
+                    
+                    echo "<option value='" . $row['id'] . "' >" . $row['descricao'] . "</option>";
+                }
+
+                ?>
+                </select>	
             </div>
         </div>
         <div class="row">
@@ -51,9 +64,7 @@
             <input id="btn_enviar" type="submit" class="btn btn-primary submit" value="Cadastrar"/>
         </div>			
     </form>
-    <div class="alert" role="alert" id="resultado">
-        
-    </div>
+    
 </div> 
 
 <!--Inclusao do JQuery -->
@@ -69,19 +80,6 @@
         $("#tel_func").mask("(99) 9999999");
     }); 
     
-    $("btn_enviar").click(function(){
-    $.ajax({
-        url: "recebe_func.php", 
-        success: function(result){
-            if(result.status == 'OK'){
-                $("#resultado").addClass('alert-success');
-            }else {
-                $("#resultado").addClass('alert-danger');
-            }
-            $("#resultado").append(result.mensagem);
-        }
-    });
-});
 </script>
 	
 <?php

@@ -1,9 +1,11 @@
-	<?php
-		include_once('includes/cabecalho.php');
-	?>
+<?php
 
-	
-	   
-	<?php
-		include_once('includes/rodape.php');
-	?>
+include_once('includes/cabecalho.php');
+?>
+
+
+
+<?php
+
+include_once('includes/rodape.php');
+?>

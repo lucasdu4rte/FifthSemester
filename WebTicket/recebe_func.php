@@ -1,6 +1,7 @@
 <?php
-ini_set('display_errors', 1);
+
 include_once('includes/conexao.php');
+include_once('includes/cabecalho.php');
 
 
 $nome_func = $_POST['nome_func'];
@@ -15,19 +16,36 @@ $dpto_func = $_POST['dpto_func'];
 $sql = "INSERT INTO funcionario (nome, data_nasc, email, telefone, celular, ramal, id_departamento) VALUES('$nome_func','$nasc_func','$email_func', '$tel_func', '$cel_func', '$ramal_func', $dpto_func)";
 
 $arr_resposta = array();
-        
+
 // Execução da Query com tramento de erro
-$r = mysqli_query($dbc,$sql);
+$r = mysqli_query($dbc, $sql);
 
 if ($r) {
-    $arr_resposta[status] = 'OK';
-    $arr_resposta[mensagem] = 'Seu cadastro foi efetuado com sucesso!';
-    
-}else {
-    $arr_resposta[status] = 'ERRO';
-    $arr_resposta[mensagem] = 'Houve um problema.<br>Por favor checar suas informações e tentar novamente.';
+    $arr_resposta['status'] = 'OK';
+    $arr_resposta['mensagem'] = 'Seu cadastro foi efetuado com sucesso!';
+} else {
+    $arr_resposta['status'] = 'ERRO';
+    $arr_resposta['mensagem'] = 'Houve um problema.<br>Por favor checar suas informações e tentar novamente.';
 }
-echo $arr_resposta;
-echo json_encode($arr_resposta);
 
+?>
+<div class="container">
+    <div class="alert <?= ($arr_resposta['status']?'OK':'ERRO'?'alert-success':'alert-warning'); ?>" role="alert">
+    <?php 
+    echo $arr_resposta['mensagem']; 
+    echo '</div>';
+    if ($arr_resposta['status'] == 'OK') {
+            echo '<br><p>Você será redirecionado ao painel de usuário...</p>';
+            header("Location: painel.php");
+        }else {
+            echo '<br><p>Você será redirecionado a página de cadastro.</p>';
+            header("Location: javascript://history.go(-1)"); 
+        }
+    ?>
+        
+    
+</div>
+<?php
 mysqli_close($dbc);
+
+include_once('includes/rodape.php');
