@@ -45,7 +45,6 @@ type
     DSDpto: TDataSource;
     FDTable1dpto_solicitante: TStringField;
     Label2: TLabel;
-    procedure btn_inserirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -59,10 +58,4 @@ implementation
 
 {$R *.dfm}
 
-uses UntDM, UntChamado;procedure TFrmListaChamados.btn_inserirClick(Sender: TObject);
-begin
-  inherited;
-  frmchamado.showmodal;
-end;
-
-end.
+uses UntDM;end.
