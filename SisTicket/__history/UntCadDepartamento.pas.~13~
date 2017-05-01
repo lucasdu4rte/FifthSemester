@@ -12,7 +12,7 @@ uses
 
 type
   TFrmCadDepartamento = class(TFrmCadSimples)
-    procedure FormActivate(Sender: TObject);
+    procedure btn_salvarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,11 +26,25 @@ implementation
 
 {$R *.dfm}
 
-procedure TFrmCadDepartamento.FormActivate(Sender: TObject);
+uses UntDepartamento;
+
+procedure TFrmCadDepartamento.btn_salvarClick(Sender: TObject);
 begin
   inherited;
-  FDTable1.Close;
-  FDTable1.Open();
+  if FrmDepartamento.FDTable1.Active = False then
+  begin
+    FrmDepartamento.FDTable1.Open();
+  end;
+
+  FrmDepartamento.FDTable1.Insert;
+
+  Application.MessageBox('O registro foi incluído ou alterado com sucesso.', 'Informação', MB_OK+MB_ICONINFORMATION);
+
+  btn_salvar.Enabled:= false;
+  btn_cancelar.Enabled:= false;
+  btn_sair.Enabled:= true;
+  PnlFicha.Enabled:= false;
+
 end;
 
 end.
