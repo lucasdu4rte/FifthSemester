@@ -4,7 +4,7 @@
 ?>
 
 <div class="container">
-    <form name="cad_func" method="post" action="recebe_func.php">
+    <form name="cad_func" id="form-cad" method="post" action="recebe_func.php">
         <h1>Cadastro de Funcionários</h1><br/>
         <div class="row">
             <div class="form group col-md-4">
@@ -78,7 +78,10 @@
         $("#nasc_func").mask("99/99/9999");
         $("#cel_func").mask("(99) 99999-9999");
         $("#tel_func").mask("(99) 9999999");
+        
+        $("#form-cad").validate();
     }); 
+    
     
 </script>
 	

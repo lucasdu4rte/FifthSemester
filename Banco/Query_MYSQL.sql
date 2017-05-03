@@ -24,6 +24,7 @@ CREATE TABLE funcionario(
 	celular varchar(50),
 	ramal varchar(50),
 	id_departamento int,
+	status char(1),
 	CONSTRAINT fk_id_departamento FOREIGN KEY (id_departamento) REFERENCES departamento(id)
 );
 
@@ -50,4 +51,25 @@ CREATE TABLE funcionarioxchamado (
 	id_chamado int,
 	CONSTRAINT fk_id_funcionario FOREIGN KEY (id_funcionario) REFERENCES funcionario(id),
 	CONSTRAINT fk_id_chamado FOREIGN KEY (id_chamado) REFERENCES chamado (id)
-)
+);
+
+ALTER TABLE `funcionario` CHANGE `status` `status` CHAR(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT 's';
+
+INSERT INTO status_chamado (descricao) VALUES ('Em atendimento');
+INSERT INTO status_chamado (descricao) VALUES ('Cancelado');
+INSERT INTO status_chamado (descricao) VALUES ('Concluído');
+
+INSERT INTO tipo (descricao) VALUES ('Hardware');
+INSERT INTO tipo (descricao) VALUES ('Software');
+INSERT INTO tipo (descricao) VALUES ('Rede');
+INSERT INTO tipo (descricao) VALUES ('Impressora');
+INSERT INTO tipo (descricao) VALUES ('Outros');
+
+INSERT INTO departamento (descricao) VALUES('TI');
+INSERT INTO departamento (descricao) VALUES('Compras');
+INSERT INTO departamento (descricao) VALUES('Financeiro');
+INSERT INTO departamento (descricao) VALUES('Recursos Humanos');
+INSERT INTO departamento (descricao) VALUES('Departamento Pessoal');
+
+INSERT INTO funcionario (nome, data_nasc, email, telefone, celular, ramal, id_departamento, status) VALUES('Lucas', '11/12/1995', 'lucas@email.com', '19 33778032', null, '8033', 1, 's');
+INSERT INTO funcionario (nome, data_nasc, email, telefone, celular, ramal, id_departamento, status) VALUES('Daniel', '28/11/1995', 'daniel@email.com', '19 33778032', null, '8034', 1, 's');

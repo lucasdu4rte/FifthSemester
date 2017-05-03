@@ -18,32 +18,34 @@ $sql = "INSERT INTO funcionario (nome, data_nasc, email, telefone, celular, rama
 $arr_resposta = array();
 
 // Execução da Query com tramento de erro
-$r = mysqli_query($dbc, $sql);
+$r = mysqli_query($dbc, $sql) or die(mysqli_error($dbc).'');
 
 if ($r) {
     $arr_resposta['status'] = 'OK';
     $arr_resposta['mensagem'] = 'Seu cadastro foi efetuado com sucesso!';
 } else {
     $arr_resposta['status'] = 'ERRO';
-    $arr_resposta['mensagem'] = 'Houve um problema.<br>Por favor checar suas informações e tentar novamente.';
+    $arr_resposta['mensagem'] = 'Erro ao tentar efetuar seu cadastro.<br>Por favor checar suas informações e tentar novamente.';
 }
-
+if ($arr_resposta['status'] == 'OK') {
+    $tipo_alerta = "alert-success";
+} else {
+    $tipo_alerta = "alert-danger";
+}
 ?>
 <div class="container">
-    <div class="alert <?= ($arr_resposta['status']?'OK':'ERRO'?'alert-success':'alert-warning'); ?>" role="alert">
+    <div class="alert <?= $tipo_alerta; ?>" role="alert">
     <?php 
     echo $arr_resposta['mensagem']; 
     echo '</div>';
     if ($arr_resposta['status'] == 'OK') {
             echo '<br><p>Você será redirecionado ao painel de usuário...</p>';
-            header("Location: painel.php");
+            //header("Location: painel.php");
         }else {
             echo '<br><p>Você será redirecionado a página de cadastro.</p>';
-            header("Location: javascript://history.go(-1)"); 
+            //header("Location: javascript://history.go(-1)"); 
         }
     ?>
-        
-    
 </div>
 <?php
 mysqli_close($dbc);
