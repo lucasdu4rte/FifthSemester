@@ -5,6 +5,10 @@
     <Transaction>2017/04/26 21:25:12.000.023,=E:\FifthSemester\SisTicket\Unit2.pas</Transaction>
     <Transaction>2017/04/26 21:27:17.000.907,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
 <<<<<<< HEAD
+    <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\UntListaChamados.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
+    <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\UntListaChamados.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
+=======
+<<<<<<< HEAD
     <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\Unit1.dfm=E:\FifthSemester\SisTicket\UntListaChamados.dfm</Transaction>
     <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\Unit1.pas=E:\FifthSemester\SisTicket\UntListaChamados.pas</Transaction>
     <Transaction>2017/04/29 16:47:57.364,=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
@@ -15,5 +19,6 @@
     <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\UntListaChamados.dfm=E:\FifthSemester\SisTicket\Unit1.dfm</Transaction>
     <Transaction>2017/04/26 21:41:33.000.620,E:\FifthSemester\SisTicket\UntListaChamados.pas=E:\FifthSemester\SisTicket\Unit1.pas</Transaction>
 >>>>>>> 1a4084a5e54a0ba4797e7aafa116fb37777a31cd
+>>>>>>> 4d94f67f1f3af898a9da4018539b9a3566015461
   </Transactions>
 </BorlandProject>

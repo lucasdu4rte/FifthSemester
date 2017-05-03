@@ -86,6 +86,12 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   inherited ToolBar1: TToolBar
 <<<<<<< HEAD
+    Width = 749
+    ExplicitWidth = 749
+    inherited btn_inserir: TToolButton
+      OnClick = btn_inserirClick
+=======
+<<<<<<< HEAD
     Width = 744
     ExplicitWidth = 744
     inherited btn_inserir: TToolButton
@@ -122,6 +128,7 @@ inherited FrmListaChamados: TFrmListaChamados
     inherited btn_sair: TToolButton
       Left = 231
       ExplicitLeft = 231
+>>>>>>> 4d94f67f1f3af898a9da4018539b9a3566015461
     end
   end
   inherited Panel2: TPanel
@@ -2631,7 +2638,11 @@ inherited FrmListaChamados: TFrmListaChamados
   end
   object DSFuncionarios: TDataSource
     DataSet = FDQryFuncionarios
+<<<<<<< HEAD
+    Left = 512
+=======
     Left = 384
+>>>>>>> 4d94f67f1f3af898a9da4018539b9a3566015461
     Top = 240
   end
   object FDfuncionario: TFDTable

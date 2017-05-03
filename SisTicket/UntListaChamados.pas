@@ -45,6 +45,9 @@ type
     DSDpto: TDataSource;
     FDTable1dpto_solicitante: TStringField;
     Label2: TLabel;
+<<<<<<< HEAD
+    procedure btn_inserirClick(Sender: TObject);
+=======
     FDQryStatus_chamado: TFDQuery;
     DSStatus_chamado: TDataSource;
     FDTable1status_chamado: TStringField;
@@ -53,6 +56,7 @@ type
     FDTable1Motivo_chamado: TStringField;
     ToolButton1: TToolButton;
     procedure ToolButton1Click(Sender: TObject);
+>>>>>>> 4d94f67f1f3af898a9da4018539b9a3566015461
   private
     { Private declarations }
   public
@@ -66,12 +70,19 @@ implementation
 
 {$R *.dfm}
 
+<<<<<<< HEAD
+uses UntDM, UntChamado;procedure TFrmListaChamados.btn_inserirClick(Sender: TObject);
+begin
+  inherited;
+  frmchamado.showmodal;
+=======
 uses UntDM, UntAtendeChamado ;
 
 procedure TFrmListaChamados.ToolButton1Click(Sender: TObject);
 begin
   inherited;
   frmatendechamado.showmodal;
+>>>>>>> 4d94f67f1f3af898a9da4018539b9a3566015461
 end;
 
 end.
