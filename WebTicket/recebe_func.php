@@ -27,6 +27,7 @@ if ($r) {
     $arr_resposta['status'] = 'ERRO';
     $arr_resposta['mensagem'] = 'Erro ao tentar efetuar seu cadastro.<br>Por favor checar suas informações e tentar novamente.';
 }
+
 if ($arr_resposta['status'] == 'OK') {
     $tipo_alerta = "alert-success";
 } else {
