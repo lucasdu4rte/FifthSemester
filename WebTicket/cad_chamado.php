@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <label>Solicitante:</label><br/>
-                    <select class="form-control" name="solicitante_chamado" id="solicitante_chamado">
+                    <select class="form-control" name="solicitantechamado" id="solicitantechamado">
 
                     <?php
                         $sql = "SELECT * from funcionario";
@@ -45,13 +45,13 @@
             <div class="row">
                 <div class="col-md-4">
                     <label>Descrição do chamado</label><br/>
-                    <textarea rows="5" cols="50" maxlenght="500" name="desc_chamado" id="desc_chamado" placeholder="Quanto mais detalhado for a descrição mais rápido será a solução..."></textarea>
+                    <textarea rows="5" cols="50" maxlenght="500" name="descchamado" id="descchamado" placeholder="Quanto mais detalhado for a descrição mais rápido será a solução..."></textarea>
                 </div>
             </div> 
             <div class="row">
                 <div class="col-md-4">
                     <label>Observações:</label><br/>
-                    <textarea rows="5" cols="50" maxlenght="500" name="obs_chamado" id="obs_chamado" placeholder="Ex: Fazer Backup ..."></textarea>
+                    <textarea rows="5" cols="50" maxlenght="500" name="obschamado" id="obschamado" placeholder="Ex: Fazer Backup ..."></textarea>
                 </div>
             </div> 
             <input type="hidden" name="enviou" value="True" />
